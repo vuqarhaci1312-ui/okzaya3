@@ -51,8 +51,10 @@ for (const relativePath of DEMO_PAGES) {
   const hasWidgetHide = html.includes('id="demo-widget-hide"');
   const hasIubenda = html.includes('iubenda_cs.js');
   const hasWhatsapp = html.includes('ChatBubble.js');
+  const hasExternalLogoHost = html.includes('//shop.vitrumgroup.org/cdn/shop/files/ozkaya-logo-white.png');
+  const hasRelativeLogo = html.includes('src="/cdn/shop/files/ozkaya-logo-white.png"');
 
-  const ok = hasMarker && hasScript && hasWidgetHide && !hasIubenda && !hasWhatsapp;
+  const ok = hasMarker && hasScript && hasWidgetHide && !hasIubenda && !hasWhatsapp && !hasExternalLogoHost && hasRelativeLogo;
   console.log(ok ? 'OK' : 'FAIL', '-', relativePath, 'demo + widgets stripped');
   if (!ok) {
     failed += 1;

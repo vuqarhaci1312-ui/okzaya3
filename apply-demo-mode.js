@@ -33,6 +33,13 @@ function stripDemoWidgets(html) {
     .replace(/<script[^>]*src="[^"]*dondy-whatsapp-chat-widget[^"]*ChatBubble\.js"[^>]*><\/script>\s*/gi, '');
 }
 
+function rewriteHostsForDeploy(html) {
+  return html
+    .replace(/https:\\\/\\\/shop\.vitrumgroup\.org/g, '')
+    .replace(/\/\/shop\.vitrumgroup\.org/g, '')
+    .replace(/https:\/\/shop\.vitrumgroup\.org/g, '');
+}
+
 function applyDemoMode(relativePath) {
   const filePath = path.join(SITE_ROOT, relativePath);
   if (!fs.existsSync(filePath)) {
@@ -50,6 +57,7 @@ function applyDemoMode(relativePath) {
   }
 
   html = stripDemoWidgets(html);
+  html = rewriteHostsForDeploy(html);
 
   if (!html.includes('id="demo-widget-hide"')) {
     html = html.replace('</head>', `${DEMO_WIDGET_HIDE}\n</head>`);
