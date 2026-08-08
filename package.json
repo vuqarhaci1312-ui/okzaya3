@@ -1,0 +1,7 @@
+{
+  "name": "vitrum-shop-local",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  }
+}

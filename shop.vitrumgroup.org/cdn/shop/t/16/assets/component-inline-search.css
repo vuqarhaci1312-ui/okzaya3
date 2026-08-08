@@ -1,0 +1,112 @@
+.header-inline-search {
+    position: relative;
+    display: block;
+    flex: 1 1 auto;
+    min-width: 0
+}
+
+.header-inline-search__form {
+    position: relative
+}
+
+.header-inline-search__field {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    padding: 0 18px;
+    border: 1px solid var(--vh-white-30);
+    background: transparent;
+    transition: border-color .12s ease, box-shadow .12s ease
+}
+
+.header-inline-search__field:focus-within {
+    border-color: var(--vh-ring);
+    box-shadow: inset 0 0 0 1px var(--vh-ring)
+}
+
+.header-inline-search__submit,
+.header-inline-search__reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #fffc;
+    cursor: pointer;
+    transition: opacity .12s ease
+}
+
+.header-inline-search__submit .svg-wrapper,
+.header-inline-search__reset .svg-wrapper,
+.header-inline-search__submit svg,
+.header-inline-search__reset svg {
+    width: 20px;
+    height: 20px
+}
+
+@media(hover:hover) {
+    .header-inline-search__submit:hover,
+    .header-inline-search__reset:hover {
+        opacity: .72
+    }
+}
+
+.header-inline-search__input {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    color: #fff;
+    appearance: none;
+    -webkit-appearance: none
+}
+
+.header-inline-search__input:focus,
+.header-inline-search__input:focus-visible {
+    outline: none;
+    box-shadow: none
+}
+
+.header-inline-search__input::placeholder {
+    color: #ffffff80;
+    opacity: 1
+}
+
+.header-inline-search__input::-webkit-search-cancel-button,
+.header-inline-search__input::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none
+}
+
+.header-inline-search .predictive-search {
+    --color-foreground: 20, 19, 19;
+    --color-background: 255, 255, 255;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: auto;
+    width: 100%;
+    background: #fff;
+    color: rgb(var(--color-foreground));
+    border: 1px solid var(--vh-ink);
+    border-radius: 0;
+    box-shadow: 0 26px 46px #0003;
+    max-height: 70vh;
+    overflow-y: auto
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .header-inline-search__field,
+    .header-inline-search__submit,
+    .header-inline-search__reset {
+        transition: none
+    }
+}
+
+/*# sourceMappingURL=/cdn/shop/t/16/assets/component-inline-search.css.map?v=107508576348744526491783726543 */

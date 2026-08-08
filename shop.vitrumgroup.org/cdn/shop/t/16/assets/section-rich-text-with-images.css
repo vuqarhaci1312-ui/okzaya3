@@ -1,0 +1,65 @@
+.rich-text-images {
+    position: relative;
+    z-index: 1
+}
+
+.rich-text-images__image {
+    display: none;
+    position: absolute;
+    width: var(--img-width, 200px);
+    z-index: 0;
+    pointer-events: none
+}
+
+.rich-text-images__image img {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+.rich-text-images__image--h-left {
+    left: var(--offset-x, 0px)
+}
+
+.rich-text-images__image--h-right {
+    right: var(--offset-x, 0px)
+}
+
+.rich-text-images__image--v-top {
+    top: var(--offset-y, 0px)
+}
+
+.rich-text-images__image--v-bottom {
+    bottom: var(--offset-y, 0px)
+}
+
+.rich-text-images__content {
+    position: relative;
+    z-index: 1;
+    max-width: 74.8rem
+}
+
+.rich-text-images__content .rich-text__text,
+.rich-text-images__content .rich-text__buttons {
+    margin-top: 3.2rem
+}
+
+.rich-text-images__container-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    max-width: var(--page-width);
+    padding-inline: 1.2rem;
+    pointer-events: none
+}
+
+@media screen and (min-width:750px) {
+    .rich-text-images__image {
+        display: block
+    }
+}
+
+/*# sourceMappingURL=/cdn/shop/t/16/assets/section-rich-text-with-images.css.map?v=25836196229686068531783726543 */

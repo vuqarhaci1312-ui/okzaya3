@@ -1,0 +1,2987 @@
+﻿{
+  "menuDrawer": [
+    {
+      "line": 2216,
+      "text": "Categories"
+    },
+    {
+      "line": 2236,
+      "text": "Refrigeration"
+    },
+    {
+      "line": 2256,
+      "text": "Fridges & freezers"
+    },
+    {
+      "line": 2275,
+      "text": "Uprights & reach-ins"
+    },
+    {
+      "line": 2280,
+      "text": "Undercounter & worktop"
+    },
+    {
+      "line": 2285,
+      "text": "Chest freezers"
+    },
+    {
+      "line": 2290,
+      "text": "Blast chillers & shock freezers"
+    },
+    {
+      "line": 2295,
+      "text": "Minibars"
+    },
+    {
+      "line": 2317,
+      "text": "Prep refrigeration"
+    },
+    {
+      "line": 2336,
+      "text": "Prep tables"
+    },
+    {
+      "line": 2341,
+      "text": "Refrigerated workbenches"
+    },
+    {
+      "line": 2346,
+      "text": "Freezer workbenches"
+    },
+    {
+      "line": 2368,
+      "text": "Display refrigeration"
+    },
+    {
+      "line": 2387,
+      "text": "Beer fridges & bottle coolers"
+    },
+    {
+      "line": 2392,
+      "text": "Multi-decks & wall cases"
+    },
+    {
+      "line": 2397,
+      "text": "Ice cream dipping cabinets"
+    },
+    {
+      "line": 2402,
+      "text": "Serve-over counters"
+    },
+    {
+      "line": 2407,
+      "text": "Freezer islands"
+    },
+    {
+      "line": 2412,
+      "text": "Glass-door merchandisers"
+    },
+    {
+      "line": 2417,
+      "text": "Countertop display"
+    },
+    {
+      "line": 2422,
+      "text": "Pastry & cake display"
+    },
+    {
+      "line": 2427,
+      "text": "Display freezers"
+    },
+    {
+      "line": 2432,
+      "text": "Refrigerated islands"
+    },
+    {
+      "line": 2437,
+      "text": "Ice cream & gelato freezers"
+    },
+    {
+      "line": 2442,
+      "text": "Wine coolers"
+    },
+    {
+      "line": 2464,
+      "text": "Cold rooms"
+    },
+    {
+      "line": 2483,
+      "text": "Cold room panels"
+    },
+    {
+      "line": 2488,
+      "text": "Refrigeration units"
+    },
+    {
+      "line": 2493,
+      "text": "Chiller cold rooms"
+    },
+    {
+      "line": 2498,
+      "text": "Freezer rooms"
+    },
+    {
+      "line": 2503,
+      "text": "Cold room shelving"
+    },
+    {
+      "line": 2508,
+      "text": "Cold room doors"
+    },
+    {
+      "line": 2528,
+      "text": "Refrigeration accessories & spares"
+    },
+    {
+      "line": 2548,
+      "text": "Cooking equipment"
+    },
+    {
+      "line": 2566,
+      "text": "Ranges & cookers"
+    },
+    {
+      "line": 2569,
+      "text": "Fryers"
+    },
+    {
+      "line": 2574,
+      "text": "Grills & griddles"
+    },
+    {
+      "line": 2593,
+      "text": "Contact & Panini grills"
+    },
+    {
+      "line": 2598,
+      "text": "Chargrills"
+    },
+    {
+      "line": 2603,
+      "text": "Griddles & Planchas"
+    },
+    {
+      "line": 2608,
+      "text": "Salamander grills"
+    },
+    {
+      "line": 2613,
+      "text": "Kebab & Shawarma grills"
+    },
+    {
+      "line": 2618,
+      "text": "Chicken rotisseries"
+    },
+    {
+      "line": 2623,
+      "text": "Roller grills & Hot dogs"
+    },
+    {
+      "line": 2628,
+      "text": "Toasters"
+    },
+    {
+      "line": 2648,
+      "text": "Pasta & boiling"
+    },
+    {
+      "line": 2651,
+      "text": "Specialty cooking"
+    },
+    {
+      "line": 2654,
+      "text": "Street food counters & carts"
+    },
+    {
+      "line": 2674,
+      "text": "Ovens & bakery"
+    },
+    {
+      "line": 2692,
+      "text": "Combi & convection"
+    },
+    {
+      "line": 2697,
+      "text": "Pizza ovens"
+    },
+    {
+      "line": 2716,
+      "text": "Electric deck ovens"
+    },
+    {
+      "line": 2721,
+      "text": "Gas deck ovens"
+    },
+    {
+      "line": 2726,
+      "text": "Conveyor pizza ovens"
+    },
+    {
+      "line": 2731,
+      "text": "Wood-fired & Hybrid"
+    },
+    {
+      "line": 2751,
+      "text": "Bakery ovens"
+    },
+    {
+      "line": 2754,
+      "text": "High-speed ovens"
+    },
+    {
+      "line": 2757,
+      "text": "Microwave ovens"
+    },
+    {
+      "line": 2760,
+      "text": "Dough & flour processing"
+    },
+    {
+      "line": 2780,
+      "text": "Food preparation"
+    },
+    {
+      "line": 2798,
+      "text": "Meat processing"
+    },
+    {
+      "line": 2803,
+      "text": "Food prep machines"
+    },
+    {
+      "line": 2822,
+      "text": "Food processors"
+    },
+    {
+      "line": 2827,
+      "text": "Mixers"
+    },
+    {
+      "line": 2832,
+      "text": "Blenders"
+    },
+    {
+      "line": 2837,
+      "text": "Food prep machine accessories"
+    },
+    {
+      "line": 2874,
+      "text": "Storage & worktables"
+    },
+    {
+      "line": 2892,
+      "text": "Work tables & Counters"
+    },
+    {
+      "line": 2897,
+      "text": "Workbenches"
+    },
+    {
+      "line": 2916,
+      "text": "Neutral workbenches"
+    },
+    {
+      "line": 2948,
+      "text": "Commercial shelving"
+    },
+    {
+      "line": 2967,
+      "text": "Wire shelving"
+    },
+    {
+      "line": 2972,
+      "text": "Polymer shelving"
+    },
+    {
+      "line": 2977,
+      "text": "Heavy-duty industrial"
+    },
+    {
+      "line": 2982,
+      "text": "Specialty racks"
+    },
+    {
+      "line": 3002,
+      "text": "Carts & Trolleys"
+    },
+    {
+      "line": 3005,
+      "text": "Lockers & Wardrobes"
+    },
+    {
+      "line": 3025,
+      "text": "Tableware & bar"
+    },
+    {
+      "line": 3045,
+      "text": "Crockery"
+    },
+    {
+      "line": 3064,
+      "text": "Plates"
+    },
+    {
+      "line": 3069,
+      "text": "Bowls"
+    },
+    {
+      "line": 3074,
+      "text": "Cups, mugs & saucers"
+    },
+    {
+      "line": 3079,
+      "text": "Mugs"
+    },
+    {
+      "line": 3084,
+      "text": "Espresso cups"
+    },
+    {
+      "line": 3089,
+      "text": "Serving dishes & platters"
+    },
+    {
+      "line": 3094,
+      "text": "Jugs & carafes"
+    },
+    {
+      "line": 3099,
+      "text": "Egg cups"
+    },
+    {
+      "line": 3121,
+      "text": "Cutlery & Flatware"
+    },
+    {
+      "line": 3140,
+      "text": "Table forks"
+    },
+    {
+      "line": 3145,
+      "text": "Table knives"
+    },
+    {
+      "line": 3150,
+      "text": "Table spoons"
+    },
+    {
+      "line": 3155,
+      "text": "Dessert cutlery"
+    },
+    {
+      "line": 3160,
+      "text": "Coffee & tea spoons"
+    },
+    {
+      "line": 3165,
+      "text": "Steak knives"
+    },
+    {
+      "line": 3170,
+      "text": "Serving cutlery"
+    },
+    {
+      "line": 3190,
+      "text": "Serving trays"
+    },
+    {
+      "line": 3195,
+      "text": "Table accessories"
+    },
+    {
+      "line": 3214,
+      "text": "Salt & pepper mills"
+    },
+    {
+      "line": 3219,
+      "text": "Menages & shakers"
+    },
+    {
+      "line": 3224,
+      "text": "Ashtrays"
+    },
+    {
+      "line": 3229,
+      "text": "Menu & table signage"
+    },
+    {
+      "line": 3234,
+      "text": "Candle holders"
+    },
+    {
+      "line": 3239,
+      "text": "Decorative lighting"
+    },
+    {
+      "line": 3261,
+      "text": "Buffet & food display"
+    },
+    {
+      "line": 3280,
+      "text": "Chafing dishes"
+    },
+    {
+      "line": 3285,
+      "text": "Display cabinet inserts"
+    },
+    {
+      "line": 3290,
+      "text": "Display risers & stands"
+    },
+    {
+      "line": 3295,
+      "text": "Display baskets"
+    },
+    {
+      "line": 3300,
+      "text": "Bread baskets"
+    },
+    {
+      "line": 3305,
+      "text": "Food covers"
+    },
+    {
+      "line": 3310,
+      "text": "Buffet stations"
+    },
+    {
+      "line": 3315,
+      "text": "Salad bars"
+    },
+    {
+      "line": 3320,
+      "text": "Heat lamps"
+    },
+    {
+      "line": 3325,
+      "text": "Cold display"
+    },
+    {
+      "line": 3362,
+      "text": "Kitchenware & knives"
+    },
+    {
+      "line": 3382,
+      "text": "Cookware"
+    },
+    {
+      "line": 3401,
+      "text": "Frying pans & saut├⌐ pans"
+    },
+    {
+      "line": 3406,
+      "text": "Saucepans & casseroles"
+    },
+    {
+      "line": 3411,
+      "text": "Stockpots & boiling pots"
+    },
+    {
+      "line": 3416,
+      "text": "Specialty cookware"
+    },
+    {
+      "line": 3421,
+      "text": "Cookware lids"
+    },
+    {
+      "line": 3426,
+      "text": "Roasting pans"
+    },
+    {
+      "line": 3448,
+      "text": "Knives & cutting"
+    },
+    {
+      "line": 3467,
+      "text": "Chef knives"
+    },
+    {
+      "line": 3472,
+      "text": "Specialty knives"
+    },
+    {
+      "line": 3477,
+      "text": "Cleavers"
+    },
+    {
+      "line": 3482,
+      "text": "Cutting boards"
+    },
+    {
+      "line": 3487,
+      "text": "Sharpening & knife care"
+    },
+    {
+      "line": 3509,
+      "text": "Kitchen utensils & tools"
+    },
+    {
+      "line": 3528,
+      "text": "Ladles & servers"
+    },
+    {
+      "line": 3533,
+      "text": "Tongs"
+    },
+    {
+      "line": 3538,
+      "text": "Whisks"
+    },
+    {
+      "line": 3543,
+      "text": "Spatulas & turners"
+    },
+    {
+      "line": 3548,
+      "text": "Peelers & graters"
+    },
+    {
+      "line": 3553,
+      "text": "Sieves & colanders"
+    },
+    {
+      "line": 3575,
+      "text": "Bowls & measuring"
+    },
+    {
+      "line": 3594,
+      "text": "Mixing bowls"
+    },
+    {
+      "line": 3599,
+      "text": "Measuring & thermometers"
+    },
+    {
+      "line": 3621,
+      "text": "Pizza & Pastry"
+    },
+    {
+      "line": 3640,
+      "text": "Pizza peels"
+    },
+    {
+      "line": 3645,
+      "text": "Pizza pans & screens"
+    },
+    {
+      "line": 3650,
+      "text": "Dough & pastry tools"
+    },
+    {
+      "line": 3655,
+      "text": "Baking trays & moulds"
+    },
+    {
+      "line": 3677,
+      "text": "Food storage & transport"
+    },
+    {
+      "line": 3696,
+      "text": "View all"
+    },
+    {
+      "line": 3701,
+      "text": "Gastronorm containers & pans"
+    },
+    {
+      "line": 3706,
+      "text": "Storage containers"
+    },
+    {
+      "line": 3711,
+      "text": "GN lids & covers"
+    },
+    {
+      "line": 3716,
+      "text": "Perforated GN containers"
+    },
+    {
+      "line": 3721,
+      "text": "Insulated GN carriers & thermoboxes"
+    },
+    {
+      "line": 3726,
+      "text": "Food thermoses & transport cans"
+    },
+    {
+      "line": 3731,
+      "text": "GN accessories"
+    },
+    {
+      "line": 3736,
+      "text": "Insulated delivery bags"
+    },
+    {
+      "line": 3773,
+      "text": "Furniture & terrace"
+    },
+    {
+      "line": 3793,
+      "text": "Dining furniture"
+    },
+    {
+      "line": 3812,
+      "text": "Dining chairs"
+    },
+    {
+      "line": 3817,
+      "text": "Dining tables"
+    },
+    {
+      "line": 3822,
+      "text": "Table bases"
+    },
+    {
+      "line": 3827,
+      "text": "Table tops"
+    },
+    {
+      "line": 3847,
+      "text": "Bar furniture"
+    },
+    {
+      "line": 3850,
+      "text": "Lounge & Soft seating"
+    },
+    {
+      "line": 3855,
+      "text": "Outdoor & terrace furniture"
+    },
+    {
+      "line": 3874,
+      "text": "Outdoor chairs & armchairs"
+    },
+    {
+      "line": 3879,
+      "text": "Outdoor tables"
+    },
+    {
+      "line": 3884,
+      "text": "Outdoor lounge sets"
+    },
+    {
+      "line": 3889,
+      "text": "Sun loungers & sunbeds"
+    },
+    {
+      "line": 3894,
+      "text": "Outdoor bar stools"
+    },
+    {
+      "line": 3899,
+      "text": "Outdoor sofas & modular seating"
+    },
+    {
+      "line": 3904,
+      "text": "Weather-resistant table tops"
+    },
+    {
+      "line": 3909,
+      "text": "Outdoor table bases"
+    },
+    {
+      "line": 3929,
+      "text": "Patio heaters"
+    },
+    {
+      "line": 3949,
+      "text": "Dishwashing & hygiene"
+    },
+    {
+      "line": 3967,
+      "text": "Dishwashers"
+    },
+    {
+      "line": 3970,
+      "text": "Dishwashing tables"
+    },
+    {
+      "line": 3973,
+      "text": "Sinks & Pre-rinse"
+    },
+    {
+      "line": 3976,
+      "text": "Waste & Grease"
+    },
+    {
+      "line": 3979,
+      "text": "Janitorial & Cleaning"
+    },
+    {
+      "line": 3982,
+      "text": "Hygiene & Sanitation"
+    },
+    {
+      "line": 4029,
+      "text": "Display risers & Stands"
+    },
+    {
+      "line": 4055,
+      "text": "Hot holding & warming"
+    },
+    {
+      "line": 4073,
+      "text": "Heated cabinets"
+    },
+    {
+      "line": 4076,
+      "text": "Bain Marie & Food warmers"
+    },
+    {
+      "line": 4079,
+      "text": "Plate warmers"
+    },
+    {
+      "line": 4082,
+      "text": "Hot display cases"
+    },
+    {
+      "line": 4102,
+      "text": "Vitrum bar systems"
+    },
+    {
+      "line": 4120,
+      "text": "Signature systems"
+    },
+    {
+      "line": 4123,
+      "text": "Cocktail stations"
+    },
+    {
+      "line": 4126,
+      "text": "Modular back bars"
+    },
+    {
+      "line": 4129,
+      "text": "Drinks & Draft units"
+    },
+    {
+      "line": 4132,
+      "text": "Coffee bar modules"
+    },
+    {
+      "line": 4135,
+      "text": "Glasswasher modules"
+    },
+    {
+      "line": 4138,
+      "text": "Cashier modules"
+    },
+    {
+      "line": 4141,
+      "text": "Mobile bars"
+    },
+    {
+      "line": 4144,
+      "text": "Cocktail trolleys"
+    },
+    {
+      "line": 4164,
+      "text": "Bar & beverage"
+    },
+    {
+      "line": 4184,
+      "text": "Ice equipment"
+    },
+    {
+      "line": 4203,
+      "text": "Ice maker machines"
+    },
+    {
+      "line": 4208,
+      "text": "Underbar ice bins & Crushers"
+    },
+    {
+      "line": 4213,
+      "text": "Ice buckets & Tools"
+    },
+    {
+      "line": 4233,
+      "text": "Drink preparation"
+    },
+    {
+      "line": 4236,
+      "text": "Beverage dispensing"
+    },
+    {
+      "line": 4239,
+      "text": "Draft & Tap systems"
+    },
+    {
+      "line": 4242,
+      "text": "Glasswashing"
+    },
+    {
+      "line": 4245,
+      "text": "Bartending tools"
+    },
+    {
+      "line": 4250,
+      "text": "Bar glassware"
+    },
+    {
+      "line": 4269,
+      "text": "Cocktail glasses"
+    },
+    {
+      "line": 4274,
+      "text": "Wine glasses"
+    },
+    {
+      "line": 4279,
+      "text": "Beer glasses"
+    },
+    {
+      "line": 4284,
+      "text": "Champagne flutes"
+    },
+    {
+      "line": 4289,
+      "text": "Spirit & Shot glasses"
+    },
+    {
+      "line": 4326,
+      "text": "Coffee & caf├⌐"
+    },
+    {
+      "line": 4346,
+      "text": "Espresso equipment"
+    },
+    {
+      "line": 4365,
+      "text": "Espresso machines"
+    },
+    {
+      "line": 4370,
+      "text": "Espresso grinders"
+    },
+    {
+      "line": 4375,
+      "text": "Tampers & Knock boxes"
+    },
+    {
+      "line": 4395,
+      "text": "Filter & Bulk coffee"
+    },
+    {
+      "line": 4398,
+      "text": "Drink dispensers"
+    },
+    {
+      "line": 4401,
+      "text": "Caf├⌐ accessories"
+    },
+    {
+      "line": 4406,
+      "text": "Ice Cream & Frozen"
+    },
+    {
+      "line": 4425,
+      "text": "Soft-serve machines"
+    },
+    {
+      "line": 4430,
+      "text": "Batch freezers"
+    },
+    {
+      "line": 4435,
+      "text": "Pasteurisers & Accessories"
+    },
+    {
+      "line": 4472,
+      "text": "Shop fittings"
+    },
+    {
+      "line": 4492,
+      "text": "Shelving systems"
+    },
+    {
+      "line": 4511,
+      "text": "Gondola shelving"
+    },
+    {
+      "line": 4516,
+      "text": "Slatwall systems"
+    },
+    {
+      "line": 4521,
+      "text": "Gridwall systems"
+    },
+    {
+      "line": 4526,
+      "text": "Pegboard systems"
+    },
+    {
+      "line": 4531,
+      "text": "Wall uprights & Brackets"
+    },
+    {
+      "line": 4551,
+      "text": "Display cases & Showcases"
+    },
+    {
+      "line": 4554,
+      "text": "Mannequins & Forms"
+    },
+    {
+      "line": 4557,
+      "text": "Garment racks & Hangers"
+    },
+    {
+      "line": 4560,
+      "text": "Hooks & Merchandising"
+    },
+    {
+      "line": 4563,
+      "text": "Baskets & Trolleys"
+    },
+    {
+      "line": 4566,
+      "text": "Fitting rooms"
+    },
+    {
+      "line": 4569,
+      "text": "Tables & Plinths"
+    },
+    {
+      "line": 4589,
+      "text": "Signage & POS"
+    },
+    {
+      "line": 4607,
+      "text": "Signs & Holders"
+    },
+    {
+      "line": 4610,
+      "text": "Shelf-edge & Ticketing"
+    },
+    {
+      "line": 4613,
+      "text": "Writable & Digital"
+    },
+    {
+      "line": 4616,
+      "text": "Cash desks & Counters"
+    },
+    {
+      "line": 4619,
+      "text": "Queue management"
+    },
+    {
+      "line": 4622,
+      "text": "POS hardware mounts"
+    },
+    {
+      "line": 4642,
+      "text": "Ventilation"
+    },
+    {
+      "line": 4660,
+      "text": "Wall-mount hoods"
+    },
+    {
+      "line": 4663,
+      "text": "Island hoods"
+    },
+    {
+      "line": 4666,
+      "text": "Condensate hoods"
+    },
+    {
+      "line": 4669,
+      "text": "Make-up air hoods"
+    },
+    {
+      "line": 4672,
+      "text": "Grease filters & Accessories"
+    },
+    {
+      "line": 4675,
+      "text": "Ductwork & Fans"
+    },
+    {
+      "line": 4695,
+      "text": "Laundry & textiles"
+    },
+    {
+      "line": 4713,
+      "text": "Laundry equipment"
+    },
+    {
+      "line": 4716,
+      "text": "Textiles & Linens"
+    },
+    {
+      "line": 4719,
+      "text": "Workwear"
+    },
+    {
+      "line": 4739,
+      "text": "Packaging & supplies"
+    },
+    {
+      "line": 4757,
+      "text": "Carrier bags"
+    },
+    {
+      "line": 4760,
+      "text": "Gift packaging"
+    },
+    {
+      "line": 4763,
+      "text": "Protective packaging"
+    },
+    {
+      "line": 4766,
+      "text": "Labels & stickers"
+    },
+    {
+      "line": 4769,
+      "text": "Tapes & dispensers"
+    },
+    {
+      "line": 4772,
+      "text": "Till rolls & receipt paper"
+    },
+    {
+      "line": 4775,
+      "text": "Food wrapping papers"
+    },
+    {
+      "line": 4813,
+      "text": "Business type"
+    },
+    {
+      "line": 4833,
+      "text": "HoReCa"
+    },
+    {
+      "line": 4851,
+      "text": "Restaurant"
+    },
+    {
+      "line": 4854,
+      "text": "Caf├⌐"
+    },
+    {
+      "line": 4857,
+      "text": "Hotel"
+    },
+    {
+      "line": 4860,
+      "text": "Fast food & QSR"
+    },
+    {
+      "line": 4863,
+      "text": "Pizzeria"
+    },
+    {
+      "line": 4866,
+      "text": "Kebab & Shawarma"
+    },
+    {
+      "line": 4869,
+      "text": "Bakery"
+    },
+    {
+      "line": 4872,
+      "text": "Bar & Pub"
+    },
+    {
+      "line": 4875,
+      "text": "Wine shop"
+    },
+    {
+      "line": 4878,
+      "text": "Catering"
+    },
+    {
+      "line": 4898,
+      "text": "Retail"
+    },
+    {
+      "line": 4916,
+      "text": "Supermarket & Grocery"
+    },
+    {
+      "line": 4919,
+      "text": "Convenience & Fuel"
+    },
+    {
+      "line": 4922,
+      "text": "Specialty retail"
+    },
+    {
+      "line": 4925,
+      "text": "Fashion & Boutique"
+    },
+    {
+      "line": 4970,
+      "text": "Plates & Bowls"
+    }
+  ],
+  "megaNav": [
+    {
+      "line": 5315,
+      "text": "Fridges & freezers"
+    },
+    {
+      "line": 5315,
+      "text": "Uprights & reach-ins"
+    },
+    {
+      "line": 5317,
+      "text": "Undercounter & worktop"
+    },
+    {
+      "line": 5317,
+      "text": "Chest freezers"
+    },
+    {
+      "line": 5317,
+      "text": "Blast chillers & shock freezers"
+    },
+    {
+      "line": 5319,
+      "text": "Minibars"
+    },
+    {
+      "line": 5321,
+      "text": "Prep refrigeration"
+    },
+    {
+      "line": 5321,
+      "text": "Prep tables"
+    },
+    {
+      "line": 5322,
+      "text": "Refrigerated workbenches"
+    },
+    {
+      "line": 5322,
+      "text": "Freezer workbenches"
+    },
+    {
+      "line": 5323,
+      "text": "Display refrigeration"
+    },
+    {
+      "line": 5323,
+      "text": "Beer fridges & bottle coolers"
+    },
+    {
+      "line": 5325,
+      "text": "Multi-decks & wall cases"
+    },
+    {
+      "line": 5325,
+      "text": "Ice cream dipping cabinets"
+    },
+    {
+      "line": 5325,
+      "text": "Serve-over counters"
+    },
+    {
+      "line": 5327,
+      "text": "Freezer islands"
+    },
+    {
+      "line": 5327,
+      "text": "Glass-door merchandisers"
+    },
+    {
+      "line": 5327,
+      "text": "Countertop display"
+    },
+    {
+      "line": 5329,
+      "text": "Pastry & cake display"
+    },
+    {
+      "line": 5329,
+      "text": "Display freezers"
+    },
+    {
+      "line": 5329,
+      "text": "Refrigerated islands"
+    },
+    {
+      "line": 5331,
+      "text": "Ice cream & gelato freezers"
+    },
+    {
+      "line": 5331,
+      "text": "Wine coolers"
+    },
+    {
+      "line": 5332,
+      "text": "Cold rooms"
+    },
+    {
+      "line": 5332,
+      "text": "Cold room panels"
+    },
+    {
+      "line": 5333,
+      "text": "Refrigeration units"
+    },
+    {
+      "line": 5333,
+      "text": "Chiller cold rooms"
+    },
+    {
+      "line": 5333,
+      "text": "Freezer rooms"
+    },
+    {
+      "line": 5335,
+      "text": "Cold room shelving"
+    },
+    {
+      "line": 5335,
+      "text": "Cold room doors"
+    },
+    {
+      "line": 5336,
+      "text": "Refrigeration accessories & spares"
+    },
+    {
+      "line": 5343,
+      "text": "Ranges & cookers"
+    },
+    {
+      "line": 5344,
+      "text": "Fryers"
+    },
+    {
+      "line": 5345,
+      "text": "Grills & griddles"
+    },
+    {
+      "line": 5345,
+      "text": "Contact & Panini grills"
+    },
+    {
+      "line": 5347,
+      "text": "Chargrills"
+    },
+    {
+      "line": 5347,
+      "text": "Griddles & Planchas"
+    },
+    {
+      "line": 5347,
+      "text": "Salamander grills"
+    },
+    {
+      "line": 5349,
+      "text": "Kebab & Shawarma grills"
+    },
+    {
+      "line": 5349,
+      "text": "Chicken rotisseries"
+    },
+    {
+      "line": 5349,
+      "text": "Roller grills & Hot dogs"
+    },
+    {
+      "line": 5351,
+      "text": "Toasters"
+    },
+    {
+      "line": 5353,
+      "text": "Pasta & boiling"
+    },
+    {
+      "line": 5354,
+      "text": "Specialty cooking"
+    },
+    {
+      "line": 5355,
+      "text": "Street food counters & carts"
+    },
+    {
+      "line": 5362,
+      "text": "Combi & convection"
+    },
+    {
+      "line": 5363,
+      "text": "Pizza ovens"
+    },
+    {
+      "line": 5363,
+      "text": "Electric deck ovens"
+    },
+    {
+      "line": 5364,
+      "text": "Gas deck ovens"
+    },
+    {
+      "line": 5364,
+      "text": "Conveyor pizza ovens"
+    },
+    {
+      "line": 5364,
+      "text": "Wood-fired & Hybrid"
+    },
+    {
+      "line": 5366,
+      "text": "Bakery ovens"
+    },
+    {
+      "line": 5367,
+      "text": "High-speed ovens"
+    },
+    {
+      "line": 5368,
+      "text": "Microwave ovens"
+    },
+    {
+      "line": 5369,
+      "text": "Dough & flour processing"
+    },
+    {
+      "line": 5376,
+      "text": "Meat processing"
+    },
+    {
+      "line": 5377,
+      "text": "Food prep machines"
+    },
+    {
+      "line": 5377,
+      "text": "Food processors"
+    },
+    {
+      "line": 5379,
+      "text": "Mixers"
+    },
+    {
+      "line": 5379,
+      "text": "Blenders"
+    },
+    {
+      "line": 5379,
+      "text": "Food prep machine accessories"
+    },
+    {
+      "line": 5386,
+      "text": "Work tables & Counters"
+    },
+    {
+      "line": 5387,
+      "text": "Workbenches"
+    },
+    {
+      "line": 5387,
+      "text": "Neutral workbenches"
+    },
+    {
+      "line": 5389,
+      "text": "Commercial shelving"
+    },
+    {
+      "line": 5389,
+      "text": "Wire shelving"
+    },
+    {
+      "line": 5390,
+      "text": "Polymer shelving"
+    },
+    {
+      "line": 5390,
+      "text": "Heavy-duty industrial"
+    },
+    {
+      "line": 5390,
+      "text": "Specialty racks"
+    },
+    {
+      "line": 5392,
+      "text": "Carts & Trolleys"
+    },
+    {
+      "line": 5393,
+      "text": "Lockers & Wardrobes"
+    },
+    {
+      "line": 5400,
+      "text": "Crockery"
+    },
+    {
+      "line": 5400,
+      "text": "Plates"
+    },
+    {
+      "line": 5400,
+      "text": "Bowls"
+    },
+    {
+      "line": 5402,
+      "text": "Cups, mugs & saucers"
+    },
+    {
+      "line": 5402,
+      "text": "Mugs"
+    },
+    {
+      "line": 5402,
+      "text": "Espresso cups"
+    },
+    {
+      "line": 5403,
+      "text": "Serving dishes & platters"
+    },
+    {
+      "line": 5403,
+      "text": "Jugs & carafes"
+    },
+    {
+      "line": 5403,
+      "text": "Egg cups"
+    },
+    {
+      "line": 5405,
+      "text": "Cutlery & Flatware"
+    },
+    {
+      "line": 5405,
+      "text": "Table forks"
+    },
+    {
+      "line": 5406,
+      "text": "Table knives"
+    },
+    {
+      "line": 5406,
+      "text": "Table spoons"
+    },
+    {
+      "line": 5406,
+      "text": "Dessert cutlery"
+    },
+    {
+      "line": 5408,
+      "text": "Coffee & tea spoons"
+    },
+    {
+      "line": 5408,
+      "text": "Steak knives"
+    },
+    {
+      "line": 5408,
+      "text": "Serving cutlery"
+    },
+    {
+      "line": 5409,
+      "text": "Serving trays"
+    },
+    {
+      "line": 5410,
+      "text": "Table accessories"
+    },
+    {
+      "line": 5410,
+      "text": "Salt & pepper mills"
+    },
+    {
+      "line": 5412,
+      "text": "Menages & shakers"
+    },
+    {
+      "line": 5412,
+      "text": "Ashtrays"
+    },
+    {
+      "line": 5412,
+      "text": "Menu & table signage"
+    },
+    {
+      "line": 5413,
+      "text": "Candle holders"
+    },
+    {
+      "line": 5413,
+      "text": "Decorative lighting"
+    },
+    {
+      "line": 5414,
+      "text": "Buffet & food display"
+    },
+    {
+      "line": 5414,
+      "text": "Chafing dishes"
+    },
+    {
+      "line": 5415,
+      "text": "Display cabinet inserts"
+    },
+    {
+      "line": 5415,
+      "text": "Display risers & stands"
+    },
+    {
+      "line": 5415,
+      "text": "Display baskets"
+    },
+    {
+      "line": 5417,
+      "text": "Bread baskets"
+    },
+    {
+      "line": 5417,
+      "text": "Food covers"
+    },
+    {
+      "line": 5417,
+      "text": "Buffet stations"
+    },
+    {
+      "line": 5418,
+      "text": "Salad bars"
+    },
+    {
+      "line": 5418,
+      "text": "Heat lamps"
+    },
+    {
+      "line": 5418,
+      "text": "Cold display"
+    },
+    {
+      "line": 5425,
+      "text": "Cookware"
+    },
+    {
+      "line": 5425,
+      "text": "Frying pans & saut├⌐ pans"
+    },
+    {
+      "line": 5426,
+      "text": "Saucepans & casseroles"
+    },
+    {
+      "line": 5426,
+      "text": "Stockpots & boiling pots"
+    },
+    {
+      "line": 5426,
+      "text": "Specialty cookware"
+    },
+    {
+      "line": 5428,
+      "text": "Cookware lids"
+    },
+    {
+      "line": 5428,
+      "text": "Roasting pans"
+    },
+    {
+      "line": 5429,
+      "text": "Knives & cutting"
+    },
+    {
+      "line": 5429,
+      "text": "Chef knives"
+    },
+    {
+      "line": 5430,
+      "text": "Specialty knives"
+    },
+    {
+      "line": 5430,
+      "text": "Cleavers"
+    },
+    {
+      "line": 5430,
+      "text": "Cutting boards"
+    },
+    {
+      "line": 5431,
+      "text": "Sharpening & knife care"
+    },
+    {
+      "line": 5432,
+      "text": "Kitchen utensils & tools"
+    },
+    {
+      "line": 5432,
+      "text": "Ladles & servers"
+    },
+    {
+      "line": 5434,
+      "text": "Tongs"
+    },
+    {
+      "line": 5434,
+      "text": "Whisks"
+    },
+    {
+      "line": 5434,
+      "text": "Spatulas & turners"
+    },
+    {
+      "line": 5434,
+      "text": "Peelers & graters"
+    },
+    {
+      "line": 5436,
+      "text": "Sieves & colanders"
+    },
+    {
+      "line": 5438,
+      "text": "Bowls & measuring"
+    },
+    {
+      "line": 5438,
+      "text": "Mixing bowls"
+    },
+    {
+      "line": 5439,
+      "text": "Measuring & thermometers"
+    },
+    {
+      "line": 5440,
+      "text": "Pizza & Pastry"
+    },
+    {
+      "line": 5440,
+      "text": "Pizza peels"
+    },
+    {
+      "line": 5441,
+      "text": "Pizza pans & screens"
+    },
+    {
+      "line": 5441,
+      "text": "Dough & pastry tools"
+    },
+    {
+      "line": 5441,
+      "text": "Baking trays & moulds"
+    },
+    {
+      "line": 5443,
+      "text": "Food storage & transport"
+    },
+    {
+      "line": 5443,
+      "text": "View all"
+    },
+    {
+      "line": 5445,
+      "text": "Gastronorm containers & pans"
+    },
+    {
+      "line": 5445,
+      "text": "Storage containers"
+    },
+    {
+      "line": 5445,
+      "text": "GN lids & covers"
+    },
+    {
+      "line": 5447,
+      "text": "Perforated GN containers"
+    },
+    {
+      "line": 5447,
+      "text": "Insulated GN carriers & thermoboxes"
+    },
+    {
+      "line": 5447,
+      "text": "Food thermoses & transport cans"
+    },
+    {
+      "line": 5449,
+      "text": "GN accessories"
+    },
+    {
+      "line": 5449,
+      "text": "Insulated delivery bags"
+    },
+    {
+      "line": 5456,
+      "text": "Dining furniture"
+    },
+    {
+      "line": 5456,
+      "text": "Dining chairs"
+    },
+    {
+      "line": 5456,
+      "text": "Dining tables"
+    },
+    {
+      "line": 5458,
+      "text": "Table bases"
+    },
+    {
+      "line": 5458,
+      "text": "Table tops"
+    },
+    {
+      "line": 5459,
+      "text": "Bar furniture"
+    },
+    {
+      "line": 5460,
+      "text": "Lounge & Soft seating"
+    },
+    {
+      "line": 5461,
+      "text": "Outdoor & terrace furniture"
+    },
+    {
+      "line": 5461,
+      "text": "Outdoor chairs & armchairs"
+    },
+    {
+      "line": 5462,
+      "text": "Outdoor tables"
+    },
+    {
+      "line": 5462,
+      "text": "Outdoor lounge sets"
+    },
+    {
+      "line": 5462,
+      "text": "Sun loungers & sunbeds"
+    },
+    {
+      "line": 5464,
+      "text": "Outdoor bar stools"
+    },
+    {
+      "line": 5464,
+      "text": "Outdoor sofas & modular seating"
+    },
+    {
+      "line": 5464,
+      "text": "Weather-resistant table tops"
+    },
+    {
+      "line": 5465,
+      "text": "Outdoor table bases"
+    },
+    {
+      "line": 5466,
+      "text": "Patio heaters"
+    },
+    {
+      "line": 5473,
+      "text": "Dishwashers"
+    },
+    {
+      "line": 5474,
+      "text": "Dishwashing tables"
+    },
+    {
+      "line": 5475,
+      "text": "Sinks & Pre-rinse"
+    },
+    {
+      "line": 5476,
+      "text": "Waste & Grease"
+    },
+    {
+      "line": 5477,
+      "text": "Janitorial & Cleaning"
+    },
+    {
+      "line": 5478,
+      "text": "Hygiene & Sanitation"
+    },
+    {
+      "line": 5488,
+      "text": "Display risers & Stands"
+    },
+    {
+      "line": 5497,
+      "text": "Heated cabinets"
+    },
+    {
+      "line": 5498,
+      "text": "Bain Marie & Food warmers"
+    },
+    {
+      "line": 5499,
+      "text": "Plate warmers"
+    },
+    {
+      "line": 5500,
+      "text": "Hot display cases"
+    },
+    {
+      "line": 5507,
+      "text": "Signature systems"
+    },
+    {
+      "line": 5508,
+      "text": "Cocktail stations"
+    },
+    {
+      "line": 5509,
+      "text": "Modular back bars"
+    },
+    {
+      "line": 5510,
+      "text": "Drinks & Draft units"
+    },
+    {
+      "line": 5511,
+      "text": "Coffee bar modules"
+    },
+    {
+      "line": 5512,
+      "text": "Glasswasher modules"
+    },
+    {
+      "line": 5513,
+      "text": "Cashier modules"
+    },
+    {
+      "line": 5514,
+      "text": "Mobile bars"
+    },
+    {
+      "line": 5515,
+      "text": "Cocktail trolleys"
+    },
+    {
+      "line": 5522,
+      "text": "Ice equipment"
+    },
+    {
+      "line": 5522,
+      "text": "Ice maker machines"
+    },
+    {
+      "line": 5523,
+      "text": "Underbar ice bins & Crushers"
+    },
+    {
+      "line": 5523,
+      "text": "Ice buckets & Tools"
+    },
+    {
+      "line": 5524,
+      "text": "Drink preparation"
+    },
+    {
+      "line": 5525,
+      "text": "Beverage dispensing"
+    },
+    {
+      "line": 5526,
+      "text": "Draft & Tap systems"
+    },
+    {
+      "line": 5527,
+      "text": "Glasswashing"
+    },
+    {
+      "line": 5528,
+      "text": "Bartending tools"
+    },
+    {
+      "line": 5529,
+      "text": "Bar glassware"
+    },
+    {
+      "line": 5529,
+      "text": "Cocktail glasses"
+    },
+    {
+      "line": 5529,
+      "text": "Wine glasses"
+    },
+    {
+      "line": 5531,
+      "text": "Beer glasses"
+    },
+    {
+      "line": 5531,
+      "text": "Champagne flutes"
+    },
+    {
+      "line": 5531,
+      "text": "Spirit & Shot glasses"
+    },
+    {
+      "line": 5538,
+      "text": "Espresso equipment"
+    },
+    {
+      "line": 5538,
+      "text": "Espresso machines"
+    },
+    {
+      "line": 5539,
+      "text": "Espresso grinders"
+    },
+    {
+      "line": 5539,
+      "text": "Tampers & Knock boxes"
+    },
+    {
+      "line": 5540,
+      "text": "Filter & Bulk coffee"
+    },
+    {
+      "line": 5541,
+      "text": "Drink dispensers"
+    },
+    {
+      "line": 5542,
+      "text": "Caf├⌐ accessories"
+    },
+    {
+      "line": 5543,
+      "text": "Ice Cream & Frozen"
+    },
+    {
+      "line": 5543,
+      "text": "Soft-serve machines"
+    },
+    {
+      "line": 5544,
+      "text": "Batch freezers"
+    },
+    {
+      "line": 5544,
+      "text": "Pasteurisers & Accessories"
+    },
+    {
+      "line": 5551,
+      "text": "Shelving systems"
+    },
+    {
+      "line": 5551,
+      "text": "Gondola shelving"
+    },
+    {
+      "line": 5552,
+      "text": "Slatwall systems"
+    },
+    {
+      "line": 5552,
+      "text": "Gridwall systems"
+    },
+    {
+      "line": 5552,
+      "text": "Pegboard systems"
+    },
+    {
+      "line": 5553,
+      "text": "Wall uprights & Brackets"
+    },
+    {
+      "line": 5554,
+      "text": "Display cases & Showcases"
+    },
+    {
+      "line": 5555,
+      "text": "Mannequins & Forms"
+    },
+    {
+      "line": 5556,
+      "text": "Garment racks & Hangers"
+    },
+    {
+      "line": 5557,
+      "text": "Hooks & Merchandising"
+    },
+    {
+      "line": 5558,
+      "text": "Baskets & Trolleys"
+    },
+    {
+      "line": 5559,
+      "text": "Fitting rooms"
+    },
+    {
+      "line": 5560,
+      "text": "Tables & Plinths"
+    },
+    {
+      "line": 5567,
+      "text": "Signs & Holders"
+    },
+    {
+      "line": 5568,
+      "text": "Shelf-edge & Ticketing"
+    },
+    {
+      "line": 5569,
+      "text": "Writable & Digital"
+    },
+    {
+      "line": 5570,
+      "text": "Cash desks & Counters"
+    },
+    {
+      "line": 5571,
+      "text": "Queue management"
+    },
+    {
+      "line": 5572,
+      "text": "POS hardware mounts"
+    },
+    {
+      "line": 5579,
+      "text": "Wall-mount hoods"
+    },
+    {
+      "line": 5580,
+      "text": "Island hoods"
+    },
+    {
+      "line": 5581,
+      "text": "Condensate hoods"
+    },
+    {
+      "line": 5582,
+      "text": "Make-up air hoods"
+    },
+    {
+      "line": 5583,
+      "text": "Grease filters & Accessories"
+    },
+    {
+      "line": 5584,
+      "text": "Ductwork & Fans"
+    },
+    {
+      "line": 5591,
+      "text": "Laundry equipment"
+    },
+    {
+      "line": 5592,
+      "text": "Textiles & Linens"
+    },
+    {
+      "line": 5593,
+      "text": "Workwear"
+    },
+    {
+      "line": 5600,
+      "text": "Carrier bags"
+    },
+    {
+      "line": 5601,
+      "text": "Gift packaging"
+    },
+    {
+      "line": 5602,
+      "text": "Protective packaging"
+    },
+    {
+      "line": 5603,
+      "text": "Labels & stickers"
+    },
+    {
+      "line": 5604,
+      "text": "Tapes & dispensers"
+    },
+    {
+      "line": 5605,
+      "text": "Till rolls & receipt paper"
+    },
+    {
+      "line": 5606,
+      "text": "Food wrapping papers"
+    },
+    {
+      "line": 5617,
+      "text": "HoReCa"
+    },
+    {
+      "line": 5617,
+      "text": "Restaurant"
+    },
+    {
+      "line": 5617,
+      "text": "Caf├⌐"
+    },
+    {
+      "line": 5617,
+      "text": "Hotel"
+    },
+    {
+      "line": 5619,
+      "text": "Fast food & QSR"
+    },
+    {
+      "line": 5619,
+      "text": "Pizzeria"
+    },
+    {
+      "line": 5619,
+      "text": "Kebab & Shawarma"
+    },
+    {
+      "line": 5619,
+      "text": "Bakery"
+    },
+    {
+      "line": 5621,
+      "text": "Bar & Pub"
+    },
+    {
+      "line": 5621,
+      "text": "Wine shop"
+    },
+    {
+      "line": 5621,
+      "text": "Catering"
+    },
+    {
+      "line": 5622,
+      "text": "Retail"
+    },
+    {
+      "line": 5622,
+      "text": "Supermarket & Grocery"
+    },
+    {
+      "line": 5623,
+      "text": "Convenience & Fuel"
+    },
+    {
+      "line": 5623,
+      "text": "Specialty retail"
+    },
+    {
+      "line": 5623,
+      "text": "Fashion & Boutique"
+    }
+  ],
+  "header": [
+    {
+      "line": 34,
+      "text": "Professional kitchen, refrigeration and shop equipment ΓÇô Vitrum Shop",
+      "type": "title"
+    },
+    {
+      "line": 38,
+      "text": "7,000+ products for professional kitchens, bars and shops. 3,000+ venues delivered, 30 years in the business ΓÇö plan yours with us.",
+      "type": "meta description"
+    },
+    {
+      "line": 43,
+      "text": "og:site_name: Vitrum Shop",
+      "type": "og"
+    },
+    {
+      "line": 43,
+      "text": "og:url: https://shop.vitrumgroup.org/",
+      "type": "og"
+    },
+    {
+      "line": 43,
+      "text": "og:title: Professional kitchen, refrigeration and shop equipment",
+      "type": "og"
+    },
+    {
+      "line": 43,
+      "text": "og:type: website",
+      "type": "og"
+    },
+    {
+      "line": 43,
+      "text": "og:description: 7,000+ products for professional kitchens, bars and shops. 3,000+ venues delivered, 30 years in the business ΓÇö plan yours with us.",
+      "type": "og"
+    },
+    {
+      "line": 49,
+      "text": "twitter:card: summary_large_image",
+      "type": "twitter"
+    },
+    {
+      "line": 49,
+      "text": "twitter:title: Professional kitchen, refrigeration and shop equipment",
+      "type": "twitter"
+    },
+    {
+      "line": 49,
+      "text": "twitter:description: 7,000+ products for professional kitchens, bars and shops. 3,000+ venues delivered, 30 years in the business ΓÇö plan yours with us.",
+      "type": "twitter"
+    }
+  ],
+  "hero": [],
+  "collections": [
+    {
+      "line": 5783,
+      "text": "Bar & Beverage",
+      "type": "title"
+    },
+    {
+      "line": 5787,
+      "text": "A good bar runs on more than good bartenders. From cocktail stations..."
+    },
+    {
+      "line": 5829,
+      "text": "Dishwashing & Hygiene",
+      "type": "title"
+    },
+    {
+      "line": 5833,
+      "text": "A wash-up area that keeps pace with the pass is the difference..."
+    },
+    {
+      "line": 5875,
+      "text": "Buffet & food display",
+      "type": "title"
+    },
+    {
+      "line": 5879,
+      "text": "A well-built buffet does the selling for you ΓÇö guests decide with..."
+    },
+    {
+      "line": 5921,
+      "text": "Refrigeration",
+      "type": "title"
+    },
+    {
+      "line": 5925,
+      "text": "Reliable cold storage is the backbone of every kitchen, shop and bar..."
+    },
+    {
+      "line": 5967,
+      "text": "Storage & worktables",
+      "type": "title"
+    },
+    {
+      "line": 5971,
+      "text": "Every fast kitchen stands on an organised back room: when shelving, racks..."
+    },
+    {
+      "line": 6013,
+      "text": "Furniture",
+      "type": "title"
+    },
+    {
+      "line": 6017,
+      "text": "Guests judge a room before the first plate arrives. This collection covers..."
+    },
+    {
+      "line": 6096,
+      "text": "Bar & Pub",
+      "type": "title"
+    },
+    {
+      "line": 6100,
+      "text": "Good bars run on choreography, and the equipment is half the cast...."
+    },
+    {
+      "line": 6142,
+      "text": "Caf├⌐",
+      "type": "title"
+    },
+    {
+      "line": 6146,
+      "text": "Caf├⌐s live on rhythm ΓÇö the morning rush, the lunchtime turnover, the..."
+    },
+    {
+      "line": 6188,
+      "text": "Bakery",
+      "type": "title"
+    },
+    {
+      "line": 6192,
+      "text": "Bakeries run on a schedule most of the city never sees, and..."
+    },
+    {
+      "line": 6234,
+      "text": "Pizzeria",
+      "type": "title"
+    },
+    {
+      "line": 6238,
+      "text": "A pizzeria stands or falls on its oven ΓÇö but service runs..."
+    },
+    {
+      "line": 6348,
+      "text": "Saro Heated Food Display Showcase NIKLAS, 97L, +30/+90┬░C",
+      "type": "title"
+    },
+    {
+      "line": 6475,
+      "text": "CroftMet Electric Stove with Cabinet PES704R, 2 Burners, 5.2 kW",
+      "type": "title"
+    },
+    {
+      "line": 6602,
+      "text": "CroftMet Electric Stove with Right Cabinet PES712R, 6-Burner, 15.6 kW",
+      "type": "title"
+    },
+    {
+      "line": 6729,
+      "text": "CroftMet Electric Floor Stove with Cabinet PES708S, 4 Burners, 10.4 kW",
+      "type": "title"
+    },
+    {
+      "line": 6856,
+      "text": "Classic Slot Toaster, 6 Slots, 240 Slices/hr, 3 kW",
+      "type": "title"
+    }
+  ],
+  "products": [
+    {
+      "line": 6416,
+      "text": "Saro Heated Food Display Showcase NIKLAS, 97L, +30/+90┬░C"
+    },
+    {
+      "line": 6420,
+      "text": "Saro",
+      "type": "desc"
+    },
+    {
+      "line": 6421,
+      "text": "Heated showcase SARO NIKLAS",
+      "type": "desc"
+    },
+    {
+      "line": 6543,
+      "text": "CroftMet Electric Stove with Cabinet PES704R, 2 Burners, 5.2 kW"
+    },
+    {
+      "line": 6547,
+      "text": "CroftMet",
+      "type": "desc"
+    },
+    {
+      "line": 6548,
+      "text": "CroftMet PES704R",
+      "type": "desc"
+    },
+    {
+      "line": 6670,
+      "text": "CroftMet Electric Stove with Right Cabinet PES712R, 6-Burner, 15.6 kW"
+    },
+    {
+      "line": 6675,
+      "text": "CroftMet PES712R",
+      "type": "desc"
+    },
+    {
+      "line": 6797,
+      "text": "CroftMet Electric Floor Stove with Cabinet PES708S, 4 Burners, 10.4 kW"
+    },
+    {
+      "line": 6802,
+      "text": "CroftMet PES708S",
+      "type": "desc"
+    },
+    {
+      "line": 6924,
+      "text": "Classic Slot Toaster, 6 Slots, 240 Slices/hr, 3 kW"
+    },
+    {
+      "line": 6928,
+      "text": "Neum├ñrker",
+      "type": "desc"
+    },
+    {
+      "line": 6929,
+      "text": "Dualit Classic Toaster 6 slots",
+      "type": "desc"
+    }
+  ],
+  "sections": [
+    {
+      "line": 1960,
+      "text": "Your cart is empty"
+    },
+    {
+      "line": 1976,
+      "text": "Your cart"
+    },
+    {
+      "line": 2001,
+      "text": "Subtotal"
+    },
+    {
+      "line": 2049,
+      "text": "Language"
+    },
+    {
+      "line": 5702,
+      "text": "Professional equipment for kitchens, bars and retail spaces"
+    },
+    {
+      "line": 5754,
+      "text": "Popular categories"
+    },
+    {
+      "line": 6066,
+      "text": "Browse by business type"
+    },
+    {
+      "line": 6306,
+      "text": "Sale"
+    },
+    {
+      "line": 7027,
+      "text": "Opening something? We do the whole room, not just the equipment."
+    },
+    {
+      "line": 7063,
+      "text": "30 years equipping the businesses that feed and serve Europe"
+    },
+    {
+      "line": 7197,
+      "text": "Mego has been collaborating with Vitrum for many years. Our cooperation is based on key principles: efficiency, professionalism, and reliability."
+    },
+    {
+      "line": 7222,
+      "text": "In more than 10 years working with Vitrum, IΓÇÖve come to see them not just as a supplier but as a trusted partner"
+    },
+    {
+      "line": 7246,
+      "text": "Our partner, Vitrum, has proven to be a reliable and professional supplier of retail equipment."
+    },
+    {
+      "line": 7293,
+      "text": "Featured brands"
+    },
+    {
+      "line": 7532,
+      "text": "Have a bigger or more complex project?"
+    },
+    {
+      "line": 7635,
+      "text": "Quick links"
+    },
+    {
+      "line": 7692,
+      "text": "Credentials"
+    },
+    {
+      "line": 7703,
+      "text": "Contact us"
+    },
+    {
+      "line": 7712,
+      "text": "Subscribe to our emails"
+    }
+  ],
+  "footer": [],
+  "cart": [],
+  "buttons": [
+    {
+      "line": 1956,
+      "text": "Your cart",
+      "type": "aria-label"
+    },
+    {
+      "line": 1961,
+      "text": "Close",
+      "type": "aria-label"
+    },
+    {
+      "line": 2200,
+      "text": "Menu",
+      "type": "aria-label"
+    },
+    {
+      "line": 2231,
+      "text": "Categories",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2251,
+      "text": "Refrigeration",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2271,
+      "text": "Fridges & freezers",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2304,
+      "text": "Search",
+      "type": "aria-label"
+    },
+    {
+      "line": 2304,
+      "text": "Search products",
+      "type": "placeholder"
+    },
+    {
+      "line": 2332,
+      "text": "Prep refrigeration",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2383,
+      "text": "Display refrigeration",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2479,
+      "text": "Cold rooms",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2563,
+      "text": "Cooking equipment",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2589,
+      "text": "Grills & griddles",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2689,
+      "text": "Ovens & bakery",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2712,
+      "text": "Pizza ovens",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2795,
+      "text": "Food preparation",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2818,
+      "text": "Food prep machines",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2889,
+      "text": "Storage & worktables",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2912,
+      "text": "Workbenches",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 2963,
+      "text": "Commercial shelving",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3040,
+      "text": "Tableware & bar",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3060,
+      "text": "Crockery",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3136,
+      "text": "Cutlery & Flatware",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3210,
+      "text": "Table accessories",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3276,
+      "text": "Buffet & food display",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3377,
+      "text": "Kitchenware & knives",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3397,
+      "text": "Cookware",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3463,
+      "text": "Knives & cutting",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3524,
+      "text": "Kitchen utensils & tools",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3590,
+      "text": "Bowls & measuring",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3636,
+      "text": "Pizza & Pastry",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3692,
+      "text": "Food storage & transport",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3788,
+      "text": "Furniture & terrace",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3808,
+      "text": "Dining furniture",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3870,
+      "text": "Outdoor & terrace furniture",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 3964,
+      "text": "Dishwashing & hygiene",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4070,
+      "text": "Hot holding & warming",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4117,
+      "text": "Vitrum bar systems",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4179,
+      "text": "Bar & beverage",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4199,
+      "text": "Ice equipment",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4265,
+      "text": "Bar glassware",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4341,
+      "text": "Coffee & caf├⌐",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4361,
+      "text": "Espresso equipment",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4421,
+      "text": "Ice Cream & Frozen",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4487,
+      "text": "Shop fittings",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4507,
+      "text": "Shelving systems",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4604,
+      "text": "Signage & POS",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4657,
+      "text": "Ventilation",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4710,
+      "text": "Laundry & textiles",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4754,
+      "text": "Packaging & supplies",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4828,
+      "text": "Business type",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4848,
+      "text": "HoReCa",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 4913,
+      "text": "Retail",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 5094,
+      "text": "Search 5,000+ products",
+      "type": "placeholder"
+    },
+    {
+      "line": 5097,
+      "text": "Clear search term",
+      "type": "aria-label"
+    },
+    {
+      "line": 5135,
+      "text": "Search",
+      "type": "placeholder"
+    },
+    {
+      "line": 5170,
+      "text": "Log in",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 5174,
+      "text": "Enquiry list",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 5182,
+      "text": "0 items",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 5189,
+      "text": "Cart",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 6259,
+      "text": "Slide left",
+      "type": "aria-label"
+    },
+    {
+      "line": 6266,
+      "text": "of",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 6269,
+      "text": "Slide right",
+      "type": "aria-label"
+    },
+    {
+      "line": 6313,
+      "text": "Slider",
+      "type": "aria-label"
+    },
+    {
+      "line": 6396,
+      "text": "Add to cart",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 6398,
+      "text": "Sold out",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 6419,
+      "text": "Vendor:",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 6425,
+      "text": "Regular price",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 6437,
+      "text": "Sale price",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 7181,
+      "text": "Customer reviews carousel",
+      "type": "aria-label"
+    },
+    {
+      "line": 7184,
+      "text": "1 of 3",
+      "type": "aria-label"
+    },
+    {
+      "line": 7209,
+      "text": "2 of 3",
+      "type": "aria-label"
+    },
+    {
+      "line": 7233,
+      "text": "3 of 3",
+      "type": "aria-label"
+    },
+    {
+      "line": 7260,
+      "text": "Previous review",
+      "type": "aria-label"
+    },
+    {
+      "line": 7268,
+      "text": "Next review",
+      "type": "aria-label"
+    },
+    {
+      "line": 7544,
+      "text": "Full name",
+      "type": "placeholder"
+    },
+    {
+      "line": 7550,
+      "text": "Company name",
+      "type": "placeholder"
+    },
+    {
+      "line": 7556,
+      "text": "Email",
+      "type": "placeholder"
+    },
+    {
+      "line": 7562,
+      "text": "Phone",
+      "type": "placeholder"
+    },
+    {
+      "line": 7568,
+      "text": "Country",
+      "type": "placeholder"
+    },
+    {
+      "line": 7574,
+      "text": "Comment",
+      "type": "placeholder"
+    },
+    {
+      "line": 7720,
+      "text": "Subscribe",
+      "type": "aria-label"
+    },
+    {
+      "line": 7734,
+      "text": "Instagram",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 7742,
+      "text": "LinkedIn",
+      "type": "visually-hidden"
+    },
+    {
+      "line": 7753,
+      "text": "Payment methods",
+      "type": "visually-hidden"
+    }
+  ],
+  "vitrum": [
+    {
+      "line": 35,
+      "text": "Vitrum Shop"
+    },
+    {
+      "line": 108,
+      "text": "vitrumlv.myshopify.com"
+    },
+    {
+      "line": 116,
+      "text": "VITRUM-pbaskakovs\\/main"
+    },
+    {
+      "line": 118,
+      "text": "VITRUM"
+    },
+    {
+      "line": 1077,
+      "text": "vitrumlv"
+    },
+    {
+      "line": 1525,
+      "text": "vitrumlv.myshopify.com\\\\\\"
+    },
+    {
+      "line": 1540,
+      "text": "vitrumlv\\"
+    },
+    {
+      "line": 4101,
+      "text": "vitrum-bar-systems"
+    },
+    {
+      "line": 4103,
+      "text": "Vitrum bar systems"
+    },
+    {
+      "line": 5067,
+      "text": "vitrumDrawerExternalCloseBound) {\n                            window.vitrumDrawerExter"
+    },
+    {
+      "line": 5650,
+      "text": "vitrum_group\\/"
+    },
+    {
+      "line": 7185,
+      "text": "vitrum-star"
+    },
+    {
+      "line": 7198,
+      "text": "Vitrum for many years. Our cooperation is based on key principles: efficiency, profess"
+    },
+    {
+      "line": 7200,
+      "text": "Vitrum is characterized by strict adherence to agreements, attention to detail, and re"
+    },
+    {
+      "line": 7223,
+      "text": "Vitrum, IΓÇÖve come to see them not just as a supplier but as a trusted partner"
+    },
+    {
+      "line": 7225,
+      "text": "Vitrum apart is their personalized approach. Every project is handled with meticulous"
+    },
+    {
+      "line": 7247,
+      "text": "Vitrum, has proven to be a reliable and professional supplier of retail equipment."
+    },
+    {
+      "line": 7694,
+      "text": "Vitrum Shop SIA"
+    },
+    {
+      "line": 7731,
+      "text": "vitrum_group/"
+    },
+    {
+      "line": 7738,
+      "text": "vitrumgroup"
+    },
+    {
+      "line": 7801,
+      "text": "Vitrum Shop. All rights reserved."
+    }
+  ]
+}

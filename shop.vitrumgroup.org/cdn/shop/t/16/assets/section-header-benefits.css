@@ -1,0 +1,38 @@
+.header-benefits {
+    display: none
+}
+
+@media screen and (min-width:1280px) {
+    .header-benefits {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        padding: 0 4rem;
+        color: rgba(var(--color-foreground), .72);
+        font-size: 1.4rem
+    }
+    .header-benefits__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        white-space: nowrap
+    }
+    .header-benefits__item {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0
+    }
+    .header-benefits__item+.header-benefits__item:before {
+        content: "";
+        width: .4rem;
+        height: .4rem;
+        margin: 0 2.2rem;
+        border-radius: 50%;
+        background-color: rgba(var(--color-foreground), .4);
+        flex-shrink: 0
+    }
+}
+
+/*# sourceMappingURL=/cdn/shop/t/16/assets/section-header-benefits.css.map?v=161473476024479396701783726543 */

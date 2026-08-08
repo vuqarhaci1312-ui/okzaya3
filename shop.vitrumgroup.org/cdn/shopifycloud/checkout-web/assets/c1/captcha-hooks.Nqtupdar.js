@@ -1,0 +1,1 @@
+No Content: https://shop.vitrumgroup.org/cdn/shopifycloud/checkout-web/assets/c1/captcha-hooks.Nqtupdar.js
