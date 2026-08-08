@@ -134,32 +134,76 @@
       target.closest('header-drawer') ||
       target.closest('menu-drawer') ||
       target.closest('.menu-drawer') ||
-      target.closest('.menu-drawer-container') ||
-      target.closest('summary.header__icon--menu')
+      target.closest('.menu-drawer-container')
     );
   }
 
-  function handleNavAreaClick(e, target, allowLinkFn) {
-    if (!isNavShell(target) && !isMenuDrawerControl(target)) {
-      return false;
-    }
-
+  function blockLinkIfNeeded(e, target, allowLinkFn) {
     var link = getLink(target);
     if (link && !allowLinkFn(link.getAttribute('href'))) {
       blockEvent(e);
+      return true;
     }
-    return true;
+    return false;
   }
 
-  function shouldBlockGenericButton(target) {
-    if (target.closest('summary')) {
-      return false;
+  function openMobileMenu(details, summary) {
+    var drawer = details.closest('header-drawer');
+    details.setAttribute('open', '');
+    details.classList.add('menu-opening');
+    summary.setAttribute('aria-expanded', 'true');
+
+    document.body.classList.add('overflow-hidden-desktop');
+    var header = document.querySelector('.section-header, .header-wrapper, .header-redesign');
+    if (header) {
+      header.classList.add('menu-open');
     }
-    return !!(
-      target.closest('button, input[type="submit"], [role="button"]') &&
-      !isMenuDrawerControl(target) &&
-      !isNavShell(target)
+
+    document.documentElement.style.setProperty(
+      '--viewport-height',
+      window.innerHeight + 'px'
     );
+
+    if (drawer && typeof drawer.openMenuDrawer === 'function') {
+      try {
+        drawer.openMenuDrawer(summary);
+      } catch (err) {
+        /* manual open above is enough */
+      }
+    }
+  }
+
+  function closeMobileMenu(details, summary) {
+    var drawer = details.closest('header-drawer');
+
+    if (drawer && typeof drawer.closeMenuDrawer === 'function') {
+      try {
+        drawer.closeMenuDrawer(new Event('click'), summary);
+        return;
+      } catch (err) {
+        /* fall through to manual close */
+      }
+    }
+
+    details.removeAttribute('open');
+    details.classList.remove('menu-opening');
+    summary.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('overflow-hidden-desktop');
+    document.body.classList.remove('overflow-hidden-tablet');
+    document.body.classList.remove('overflow-hidden-mobile');
+
+    var header = document.querySelector('.section-header, .header-wrapper, .header-redesign');
+    if (header) {
+      header.classList.remove('menu-open');
+    }
+
+    details.querySelectorAll('details').forEach(function (sub) {
+      sub.removeAttribute('open');
+      sub.classList.remove('menu-opening');
+    });
+    details.querySelectorAll('.submenu-open').forEach(function (sub) {
+      sub.classList.remove('submenu-open');
+    });
   }
 
   function bindMobileMenuToggle() {
@@ -175,64 +219,43 @@
 
     details.dataset.demoMenuBound = 'true';
 
-    function ensureDrawerOpen() {
-      var drawer = details.closest('header-drawer');
-      if (!details.hasAttribute('open')) {
-        details.setAttribute('open', '');
+    function toggleMenu(e) {
+      if (getLink(e.target)) {
+        return;
       }
-      details.classList.add('menu-opening');
-      if (drawer && typeof drawer.openMenuDrawer === 'function') {
-        drawer.openMenuDrawer(summary);
+
+      e.preventDefault();
+      e.stopPropagation();
+      if (typeof e.stopImmediatePropagation === 'function') {
+        e.stopImmediatePropagation();
+      }
+
+      if (details.hasAttribute('open')) {
+        closeMobileMenu(details, summary);
       } else {
-        summary.setAttribute('aria-expanded', 'true');
-        document.body.classList.add('overflow-hidden-desktop');
-        var header = document.querySelector('.section-header, .header-wrapper, .header-redesign');
-        if (header) {
-          header.classList.add('menu-open');
-        }
+        openMobileMenu(details, summary);
       }
     }
 
-    summary.addEventListener('click', function (e) {
-      if (getLink(e.target)) {
-        return;
-      }
-      var wasOpen = details.hasAttribute('open');
-      window.setTimeout(function () {
-        if (!wasOpen && !details.hasAttribute('open')) {
-          ensureDrawerOpen();
-        }
-      }, 0);
-    });
+    summary.addEventListener('click', toggleMenu, true);
 
-    summary.addEventListener('keydown', function (e) {
-      if (e.key !== 'Enter' && e.key !== ' ') {
-        return;
-      }
-      if (getLink(e.target)) {
-        return;
-      }
-      var wasOpen = details.hasAttribute('open');
-      window.setTimeout(function () {
-        if (!wasOpen && !details.hasAttribute('open')) {
-          ensureDrawerOpen();
-        }
-      }, 0);
+    details.querySelectorAll('.menu-drawer__close-button').forEach(function (button) {
+      button.addEventListener('click', function (e) {
+        e.stopPropagation();
+      }, true);
     });
-  }
-
-  function isLockedShell(target) {
-    return !!target.closest(LOCKED_SELECTORS);
   }
 
   function handleHomeClick(e) {
     var target = e.target;
 
-    if (handleNavAreaClick(e, target, isAllowedHomeHref)) {
+    if (isMenuDrawerControl(target)) {
+      blockLinkIfNeeded(e, target, isAllowedHomeHref);
       return;
     }
 
-    if (target.closest('summary.header__icon--menu, summary.header__icon--summary')) {
+    if (isNavShell(target)) {
+      blockLinkIfNeeded(e, target, isAllowedHomeHref);
       return;
     }
 
@@ -246,22 +269,19 @@
 
     if (target.closest(HOME_BLOCK_SELECTORS)) {
       blockEvent(e);
-      return;
-    }
-
-    if (shouldBlockGenericButton(target)) {
-      blockEvent(e);
     }
   }
 
   function handleLockedClick(e) {
     var target = e.target;
 
-    if (handleNavAreaClick(e, target, isAllowedLockedHref)) {
+    if (isMenuDrawerControl(target)) {
+      blockLinkIfNeeded(e, target, isAllowedLockedHref);
       return;
     }
 
-    if (target.closest('summary.header__icon--menu, summary.header__icon--summary')) {
+    if (isNavShell(target)) {
+      blockLinkIfNeeded(e, target, isAllowedLockedHref);
       return;
     }
 
@@ -280,10 +300,6 @@
 
     if (target.closest('.header-redesign__logo, .header__heading-link')) {
       return;
-    }
-
-    if (shouldBlockGenericButton(target)) {
-      blockEvent(e);
     }
   }
 
@@ -369,18 +385,24 @@
       'width: 100% !important;' +
       'overscroll-behavior-x: none;' +
       '}' +
-      'body {' +
-      'position: relative;' +
+      'body { position: relative; }' +
+      '.header-wrapper, .header-wrapper .header-redesign, header-drawer, .menu-drawer-container {' +
+      'overflow: visible !important;' +
+      'overflow-x: visible !important;' +
       '}' +
-      'header-drawer, .menu-drawer-container {' +
-      'position: relative;' +
-      'z-index: 20;' +
-      '}' +
+      'header-drawer { position: relative; z-index: 30; }' +
       'header-drawer summary.header__icon--menu {' +
       'touch-action: manipulation;' +
       'cursor: pointer;' +
+      'position: relative;' +
+      'z-index: 31;' +
+      '-webkit-tap-highlight-color: transparent;' +
       '}' +
-      '#MainContent, .shopify-section, .header-wrapper, .footer, .page-width, main {' +
+      'header-drawer details[open].menu-opening > .menu-drawer {' +
+      'visibility: visible !important;' +
+      'transform: translate(0) !important;' +
+      '}' +
+      '#MainContent, .shopify-section:not(.header-wrapper), .footer, .page-width, main {' +
       'max-width: 100%;' +
       'overflow-x: clip;' +
       '}';
@@ -420,7 +442,7 @@
     document.addEventListener('click', handleWidgetClick, false);
   }
 
-  function initDemoInteraction(mode) {
+  function initDemoInteraction() {
     initWidgetLockdown();
     bindMobileMenuToggle();
     document.addEventListener('click', handleClick, false);
@@ -433,11 +455,14 @@
     return;
   }
 
+  function start() {
+    initDemoInteraction();
+    window.setTimeout(bindMobileMenuToggle, 500);
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      initDemoInteraction(mode);
-    });
+    document.addEventListener('DOMContentLoaded', start);
   } else {
-    initDemoInteraction(mode);
+    start();
   }
 })();

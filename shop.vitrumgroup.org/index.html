@@ -1909,9 +1909,11 @@ shopify-privacy-banner,#shopify-privacy-banner-embed,#shopify-privacy-banner
 {display:none!important;visibility:hidden!important;pointer-events:none!important;opacity:0!important}
 html,body{overflow-x:hidden!important;max-width:100%!important;width:100%!important;overscroll-behavior-x:none}
 body{position:relative}
-header-drawer,.menu-drawer-container{position:relative;z-index:20}
-header-drawer summary.header__icon--menu{touch-action:manipulation;cursor:pointer}
-#MainContent,.shopify-section,.header-wrapper,.footer,.page-width,main{max-width:100%;overflow-x:clip}
+.header-wrapper,.header-wrapper .header-redesign,header-drawer,.menu-drawer-container{overflow:visible!important;overflow-x:visible!important}
+header-drawer{position:relative;z-index:30}
+header-drawer summary.header__icon--menu{touch-action:manipulation;cursor:pointer;position:relative;z-index:31;-webkit-tap-highlight-color:transparent}
+header-drawer details[open].menu-opening>.menu-drawer{visibility:visible!important;transform:translate(0)!important}
+#MainContent,.shopify-section:not(.header-wrapper),.footer,.page-width,main{max-width:100%;overflow-x:clip}
 </style>
 </head>
 
