@@ -9,6 +9,9 @@ const DEMO_WIDGET_HIDE = `<style id="demo-widget-hide">
 #whatsapp-widget-root,#chat-bubble,.whatsapp-widget,#whatsapp-link,.chat-window,
 shopify-privacy-banner,#shopify-privacy-banner-embed,#shopify-privacy-banner
 {display:none!important;visibility:hidden!important;pointer-events:none!important;opacity:0!important}
+html,body{overflow-x:hidden!important;max-width:100%!important;width:100%!important;overscroll-behavior-x:none}
+body{position:relative;touch-action:pan-y pinch-zoom}
+#MainContent,.shopify-section,.header-wrapper,.footer,.page-width,main{max-width:100%;overflow-x:clip}
 </style>`;
 
 const DEMO_PAGES = [
@@ -59,7 +62,9 @@ function applyDemoMode(relativePath) {
   html = stripDemoWidgets(html);
   html = rewriteHostsForDeploy(html);
 
-  if (!html.includes('id="demo-widget-hide"')) {
+  if (html.includes('id="demo-widget-hide"')) {
+    html = html.replace(/<style id="demo-widget-hide">[\s\S]*?<\/style>\s*/i, `${DEMO_WIDGET_HIDE}\n`);
+  } else {
     html = html.replace('</head>', `${DEMO_WIDGET_HIDE}\n</head>`);
   }
 

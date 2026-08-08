@@ -295,6 +295,30 @@
     document.head.appendChild(style);
   }
 
+  function injectMobileViewportFix() {
+    if (document.getElementById('demo-mobile-fix')) {
+      return;
+    }
+    var style = document.createElement('style');
+    style.id = 'demo-mobile-fix';
+    style.textContent =
+      'html, body {' +
+      'overflow-x: hidden !important;' +
+      'max-width: 100% !important;' +
+      'width: 100% !important;' +
+      'overscroll-behavior-x: none;' +
+      '}' +
+      'body {' +
+      'position: relative;' +
+      'touch-action: pan-y pinch-zoom;' +
+      '}' +
+      '#MainContent, .shopify-section, .header-wrapper, .footer, .page-width, main {' +
+      'max-width: 100%;' +
+      'overflow-x: clip;' +
+      '}';
+    document.head.appendChild(style);
+  }
+
   function stubCookieApis() {
     window._iub = window._iub || [];
     window._iub.csConfiguration = window._iub.csConfiguration || {};
@@ -308,6 +332,7 @@
 
   function initWidgetLockdown() {
     injectWidgetHideStyles();
+    injectMobileViewportFix();
     stubCookieApis();
     hideWidgets(document);
 
