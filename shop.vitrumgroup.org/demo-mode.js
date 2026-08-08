@@ -152,12 +152,73 @@
   }
 
   function shouldBlockGenericButton(target) {
+    if (target.closest('summary')) {
+      return false;
+    }
     return !!(
       target.closest('button, input[type="submit"], [role="button"]') &&
       !isMenuDrawerControl(target) &&
-      !isNavShell(target) &&
-      !target.closest('summary.header__icon--menu, summary.header__icon--summary')
+      !isNavShell(target)
     );
+  }
+
+  function bindMobileMenuToggle() {
+    var details = document.getElementById('Details-menu-drawer-container');
+    if (!details || details.dataset.demoMenuBound === 'true') {
+      return;
+    }
+
+    var summary = details.querySelector('summary.header__icon--menu');
+    if (!summary) {
+      return;
+    }
+
+    details.dataset.demoMenuBound = 'true';
+
+    function ensureDrawerOpen() {
+      var drawer = details.closest('header-drawer');
+      if (!details.hasAttribute('open')) {
+        details.setAttribute('open', '');
+      }
+      details.classList.add('menu-opening');
+      if (drawer && typeof drawer.openMenuDrawer === 'function') {
+        drawer.openMenuDrawer(summary);
+      } else {
+        summary.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('overflow-hidden-desktop');
+        var header = document.querySelector('.section-header, .header-wrapper, .header-redesign');
+        if (header) {
+          header.classList.add('menu-open');
+        }
+      }
+    }
+
+    summary.addEventListener('click', function (e) {
+      if (getLink(e.target)) {
+        return;
+      }
+      var wasOpen = details.hasAttribute('open');
+      window.setTimeout(function () {
+        if (!wasOpen && !details.hasAttribute('open')) {
+          ensureDrawerOpen();
+        }
+      }, 0);
+    });
+
+    summary.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') {
+        return;
+      }
+      if (getLink(e.target)) {
+        return;
+      }
+      var wasOpen = details.hasAttribute('open');
+      window.setTimeout(function () {
+        if (!wasOpen && !details.hasAttribute('open')) {
+          ensureDrawerOpen();
+        }
+      }, 0);
+    });
   }
 
   function isLockedShell(target) {
@@ -310,7 +371,14 @@
       '}' +
       'body {' +
       'position: relative;' +
-      'touch-action: pan-y pinch-zoom;' +
+      '}' +
+      'header-drawer, .menu-drawer-container {' +
+      'position: relative;' +
+      'z-index: 20;' +
+      '}' +
+      'header-drawer summary.header__icon--menu {' +
+      'touch-action: manipulation;' +
+      'cursor: pointer;' +
       '}' +
       '#MainContent, .shopify-section, .header-wrapper, .footer, .page-width, main {' +
       'max-width: 100%;' +
@@ -349,7 +417,15 @@
       observer.observe(document.documentElement, { childList: true, subtree: true });
     }
 
-    document.addEventListener('click', handleWidgetClick, true);
+    document.addEventListener('click', handleWidgetClick, false);
+  }
+
+  function initDemoInteraction(mode) {
+    initWidgetLockdown();
+    bindMobileMenuToggle();
+    document.addEventListener('click', handleClick, false);
+    document.addEventListener('submit', handleSubmit, true);
+    document.addEventListener('keydown', handleKeydown, false);
   }
 
   var mode = getMode();
@@ -357,8 +433,11 @@
     return;
   }
 
-  initWidgetLockdown();
-  document.addEventListener('click', handleClick, true);
-  document.addEventListener('submit', handleSubmit, true);
-  document.addEventListener('keydown', handleKeydown, true);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      initDemoInteraction(mode);
+    });
+  } else {
+    initDemoInteraction(mode);
+  }
 })();

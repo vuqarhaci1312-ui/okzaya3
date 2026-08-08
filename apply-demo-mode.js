@@ -10,7 +10,9 @@ const DEMO_WIDGET_HIDE = `<style id="demo-widget-hide">
 shopify-privacy-banner,#shopify-privacy-banner-embed,#shopify-privacy-banner
 {display:none!important;visibility:hidden!important;pointer-events:none!important;opacity:0!important}
 html,body{overflow-x:hidden!important;max-width:100%!important;width:100%!important;overscroll-behavior-x:none}
-body{position:relative;touch-action:pan-y pinch-zoom}
+body{position:relative}
+header-drawer,.menu-drawer-container{position:relative;z-index:20}
+header-drawer summary.header__icon--menu{touch-action:manipulation;cursor:pointer}
 #MainContent,.shopify-section,.header-wrapper,.footer,.page-width,main{max-width:100%;overflow-x:clip}
 </style>`;
 

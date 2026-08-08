@@ -31,6 +31,7 @@ const jsChecks = [
   ['header-drawer support', js.includes('header-drawer'), 'mobile burger drawer support'],
   ['menu drawer control', js.includes('isMenuDrawerControl'), 'menu drawer control helper'],
   ['mobile overflow fix', js.includes('demo-mobile-fix'), 'mobile horizontal scroll lock'],
+  ['mobile menu toggle', js.includes('bindMobileMenuToggle'), 'mobile menu toggle fallback'],
 ];
 
 let failed = 0;
