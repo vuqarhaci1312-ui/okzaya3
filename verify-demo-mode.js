@@ -28,6 +28,8 @@ const jsChecks = [
   ['widget lockdown', js.includes('initWidgetLockdown'), 'widget lockdown init'],
   ['whatsapp block', js.includes('whatsapp-widget'), 'whatsapp widget block'],
   ['iubenda block', js.includes('iubenda-cs'), 'iubenda cookie block'],
+  ['header-drawer support', js.includes('header-drawer'), 'mobile burger drawer support'],
+  ['menu drawer control', js.includes('isMenuDrawerControl'), 'menu drawer control helper'],
 ];
 
 let failed = 0;

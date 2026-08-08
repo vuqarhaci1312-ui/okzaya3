@@ -122,8 +122,41 @@
     return !!(
       target.closest('mega-nav') ||
       target.closest('.mega-nav') ||
+      target.closest('header-drawer') ||
       target.closest('menu-drawer') ||
-      target.closest('.menu-drawer')
+      target.closest('.menu-drawer') ||
+      target.closest('.menu-drawer-container')
+    );
+  }
+
+  function isMenuDrawerControl(target) {
+    return !!(
+      target.closest('header-drawer') ||
+      target.closest('menu-drawer') ||
+      target.closest('.menu-drawer') ||
+      target.closest('.menu-drawer-container') ||
+      target.closest('summary.header__icon--menu')
+    );
+  }
+
+  function handleNavAreaClick(e, target, allowLinkFn) {
+    if (!isNavShell(target) && !isMenuDrawerControl(target)) {
+      return false;
+    }
+
+    var link = getLink(target);
+    if (link && !allowLinkFn(link.getAttribute('href'))) {
+      blockEvent(e);
+    }
+    return true;
+  }
+
+  function shouldBlockGenericButton(target) {
+    return !!(
+      target.closest('button, input[type="submit"], [role="button"]') &&
+      !isMenuDrawerControl(target) &&
+      !isNavShell(target) &&
+      !target.closest('summary.header__icon--menu, summary.header__icon--summary')
     );
   }
 
@@ -133,19 +166,16 @@
 
   function handleHomeClick(e) {
     var target = e.target;
+
+    if (handleNavAreaClick(e, target, isAllowedHomeHref)) {
+      return;
+    }
+
+    if (target.closest('summary.header__icon--menu, summary.header__icon--summary')) {
+      return;
+    }
+
     var link = getLink(target);
-
-    if (isNavShell(target)) {
-      if (link && !isAllowedHomeHref(link.getAttribute('href'))) {
-        blockEvent(e);
-      }
-      return;
-    }
-
-    if (target.closest('summary.header__icon--menu, .header__icon--summary')) {
-      return;
-    }
-
     if (link) {
       if (!isAllowedHomeHref(link.getAttribute('href'))) {
         blockEvent(e);
@@ -158,27 +188,27 @@
       return;
     }
 
-    if (target.closest('button, input[type="submit"], [role="button"]')) {
+    if (shouldBlockGenericButton(target)) {
       blockEvent(e);
     }
   }
 
   function handleLockedClick(e) {
     var target = e.target;
-    var link = getLink(target);
 
+    if (handleNavAreaClick(e, target, isAllowedLockedHref)) {
+      return;
+    }
+
+    if (target.closest('summary.header__icon--menu, summary.header__icon--summary')) {
+      return;
+    }
+
+    var link = getLink(target);
     if (link) {
       if (!isAllowedLockedHref(link.getAttribute('href'))) {
         blockEvent(e);
       }
-      return;
-    }
-
-    if (target.closest('summary.header__icon--menu, .header__icon--summary')) {
-      return;
-    }
-
-    if (isNavShell(target)) {
       return;
     }
 
@@ -191,7 +221,7 @@
       return;
     }
 
-    if (target.closest('button, input[type="submit"], [role="button"]')) {
+    if (shouldBlockGenericButton(target)) {
       blockEvent(e);
     }
   }
