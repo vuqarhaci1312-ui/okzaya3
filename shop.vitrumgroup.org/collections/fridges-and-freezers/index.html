@@ -941,12 +941,11 @@ shopify-privacy-banner,#shopify-privacy-banner-embed,#shopify-privacy-banner
 {display:none!important;visibility:hidden!important;pointer-events:none!important;opacity:0!important}
 html,body{overflow-x:hidden!important;max-width:100%!important;width:100%!important;overscroll-behavior-x:none}
 body{position:relative}
-.header-wrapper,.header-wrapper .header-redesign,header-drawer,.menu-drawer-container{overflow:visible!important;overflow-x:visible!important}
-header-drawer{position:relative;z-index:30}
-header-drawer summary.header__icon--menu{touch-action:manipulation;cursor:pointer;position:relative;z-index:31;-webkit-tap-highlight-color:transparent}
-@media screen and (max-width:1279.98px){.header-redesign header-drawer details[open].menu-opening{margin-left:0!important}}
-header-drawer details[open].menu-opening>.menu-drawer{position:fixed!important;left:0!important;top:var(--header-bottom-position,64px)!important;visibility:visible!important;transform:translate(0)!important;z-index:100!important}
-.js header-drawer>details[open].menu-opening>summary.header__icon--menu:before{position:fixed!important;left:0!important;right:0!important;width:100vw!important;top:var(--header-bottom-position,64px)!important;height:calc(100vh - var(--header-bottom-position,64px))!important}
+.header-wrapper,.header-wrapper .header-redesign,header-drawer,.menu-drawer-container,.menu-drawer{overflow:visible!important;overflow-x:visible!important}
+.js header-drawer>details[open].menu-opening>summary.header__icon--menu:before{display:none!important}
+header-drawer details[open].menu-opening>.menu-drawer{visibility:visible!important;transform:translate(0)!important;z-index:5!important}
+@media screen and (max-width:749.98px){.header-redesign header-drawer details[open].menu-opening>.menu-drawer{left:calc(-1.2rem + 9px)!important}}
+@media screen and (min-width:750px) and (max-width:1279.98px){.header-redesign header-drawer details[open].menu-opening>.menu-drawer{left:calc(-5rem + 9px)!important}}
 #MainContent,.shopify-section:not(.header-wrapper),.footer,.page-width,main{max-width:100%;overflow-x:clip}
 </style>
 </head>

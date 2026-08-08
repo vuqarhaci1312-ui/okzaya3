@@ -30,8 +30,7 @@ const jsChecks = [
   ['iubenda block', js.includes('iubenda-cs'), 'iubenda cookie block'],
   ['header-drawer support', js.includes('header-drawer'), 'mobile burger drawer support'],
   ['menu drawer control', js.includes('isMenuDrawerControl'), 'menu drawer control helper'],
-  ['mobile overflow fix', js.includes('demo-mobile-fix'), 'mobile horizontal scroll lock'],
-  ['mobile menu toggle', js.includes('bindMobileMenuToggle'), 'mobile menu toggle fallback'],
+  ['mobile menu css', js.includes('display:none!important'), 'mobile menu css overrides'],
 ];
 
 let failed = 0;
@@ -54,12 +53,13 @@ for (const relativePath of DEMO_PAGES) {
   const hasScript = html.includes('/demo-mode.js');
   const hasWidgetHide = html.includes('id="demo-widget-hide"');
   const hasMobileOverflowFix = html.includes('overflow-x:hidden');
+  const hasMenuAlignFix = html.includes('left:calc(-1.2rem + 9px)');
   const hasIubenda = html.includes('iubenda_cs.js');
   const hasWhatsapp = html.includes('ChatBubble.js');
   const hasExternalLogoHost = html.includes('//shop.vitrumgroup.org/cdn/shop/files/ozkaya-logo-white.png');
   const hasRelativeLogo = html.includes('src="/cdn/shop/files/ozkaya-logo-white.png"');
 
-  const ok = hasMarker && hasScript && hasWidgetHide && hasMobileOverflowFix && !hasIubenda && !hasWhatsapp && !hasExternalLogoHost && hasRelativeLogo;
+  const ok = hasMarker && hasScript && hasWidgetHide && hasMobileOverflowFix && hasMenuAlignFix && !hasIubenda && !hasWhatsapp && !hasExternalLogoHost && hasRelativeLogo;
   console.log(ok ? 'OK' : 'FAIL', '-', relativePath, 'demo + widgets stripped');
   if (!ok) {
     failed += 1;
