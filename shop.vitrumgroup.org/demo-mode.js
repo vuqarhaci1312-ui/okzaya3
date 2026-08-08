@@ -316,8 +316,66 @@
     document.addEventListener('click', handleWidgetClick, false);
   }
 
+  function syncMobileMenuState(details) {
+    var header = document.querySelector('.section-header');
+    var summary = details.querySelector('summary.header__icon--menu');
+    var headerWrapper = details.closest('.header-wrapper');
+
+    if (!details.hasAttribute('open')) {
+      details.classList.remove('menu-opening');
+      if (header) {
+        header.classList.remove('menu-open');
+      }
+      if (summary) {
+        summary.setAttribute('aria-expanded', 'false');
+      }
+      return;
+    }
+
+    if (!details.classList.contains('menu-opening')) {
+      details.classList.add('menu-opening');
+    }
+
+    if (header) {
+      var borderOffset =
+        headerWrapper && headerWrapper.classList.contains('header-wrapper--border-bottom') ? 1 : 0;
+      document.documentElement.style.setProperty(
+        '--header-bottom-position',
+        parseInt(header.getBoundingClientRect().bottom - borderOffset, 10) + 'px'
+      );
+      document.documentElement.style.setProperty('--viewport-height', window.innerHeight + 'px');
+      header.classList.add('menu-open');
+    }
+
+    if (summary) {
+      summary.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  function initMobileMenuFallback() {
+    var details = document.getElementById('Details-menu-drawer-container');
+    if (!details || details.dataset.demoMenuFallback === 'true') {
+      return;
+    }
+
+    details.dataset.demoMenuFallback = 'true';
+    syncMobileMenuState(details);
+
+    details.addEventListener('toggle', function () {
+      syncMobileMenuState(details);
+    });
+
+    if (typeof MutationObserver !== 'undefined') {
+      var observer = new MutationObserver(function () {
+        syncMobileMenuState(details);
+      });
+      observer.observe(details, { attributes: true, attributeFilter: ['open', 'class'] });
+    }
+  }
+
   function initDemoInteraction() {
     initWidgetLockdown();
+    initMobileMenuFallback();
     document.addEventListener('click', handleClick, false);
     document.addEventListener('submit', handleSubmit, true);
     document.addEventListener('keydown', handleKeydown, false);

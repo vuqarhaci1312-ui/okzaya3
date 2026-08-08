@@ -30,6 +30,8 @@ const jsChecks = [
   ['iubenda block', js.includes('iubenda-cs'), 'iubenda cookie block'],
   ['header-drawer support', js.includes('header-drawer'), 'mobile burger drawer support'],
   ['menu drawer control', js.includes('isMenuDrawerControl'), 'menu drawer control helper'],
+  ['mobile menu fallback', js.includes('initMobileMenuFallback'), 'mobile menu open fallback'],
+  ['mobile menu sync', js.includes('syncMobileMenuState'), 'mobile menu state sync'],
   ['mobile menu css', js.includes('display:none!important'), 'mobile menu css overrides'],
 ];
 

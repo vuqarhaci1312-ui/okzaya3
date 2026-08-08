@@ -7,7 +7,7 @@ function getFocusableElements(container) {
 }
 
 class SectionId {
-    static# separator = '__';
+    static #separator = '__';
 
     // for a qualified section id (e.g. 'template--22224696705326__main'), return just the section id (e.g. 'template--22224696705326')
     static parseId(qualifiedSectionId) {
@@ -33,7 +33,7 @@ class HTMLUpdateUtility {
      * The function currently uses a double buffer approach, but this should be replaced by a view transition once it is more widely supported https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API
      */
     static viewTransition(oldNode, newContent, preProcessCallbacks = [], postProcessCallbacks = []) {
-        preProcessCallbacks ? .forEach((callback) => callback(newContent));
+        preProcessCallbacks ?.forEach((callback) => callback(newContent));
 
         const newNodeWrapper = document.createElement('div');
         HTMLUpdateUtility.setInnerHTML(newNodeWrapper, newContent.outerHTML);
@@ -49,7 +49,7 @@ class HTMLUpdateUtility {
         oldNode.parentNode.insertBefore(newNode, oldNode);
         oldNode.style.display = 'none';
 
-        postProcessCallbacks ? .forEach((callback) => callback(newNode));
+        postProcessCallbacks ?.forEach((callback) => callback(newNode));
 
         setTimeout(() => oldNode.remove(), 500);
     }
@@ -509,7 +509,7 @@ class MenuDrawer extends HTMLElement {
         removeTrapFocus(elementToFocus);
         this.closeAnimation(this.mainDetailsToggle);
 
-        if (event instanceof KeyboardEvent) elementToFocus ? .setAttribute('aria-expanded', false);
+        if (event instanceof KeyboardEvent) elementToFocus ?.setAttribute('aria-expanded', false);
     }
 
     onFocusOut() {
@@ -1149,7 +1149,7 @@ class ProductRecommendations extends HTMLElement {
     }
 
     initializeRecommendations(productId) {
-        this.observer ? .unobserve(this);
+        this.observer ?.unobserve(this);
         this.observer = new IntersectionObserver(
             (entries, observer) => {
                 if (!entries[0].isIntersecting) return;
@@ -1176,7 +1176,7 @@ class ProductRecommendations extends HTMLElement {
                 html.innerHTML = text;
                 const recommendations = html.querySelector('product-recommendations');
 
-                if (recommendations ? .innerHTML.trim().length) {
+                if (recommendations ?.innerHTML.trim().length) {
                     this.innerHTML = recommendations.innerHTML;
                 }
 
@@ -1214,8 +1214,8 @@ class AccountIcon extends HTMLElement {
     }
 
     handleStorefrontSignInCompleted(event) {
-        if (event ? .detail ? .avatar) {
-            this.icon ? .replaceWith(event.detail.avatar.cloneNode());
+        if (event ?.detail ?.avatar) {
+            this.icon ?.replaceWith(event.detail.avatar.cloneNode());
         }
     }
 }
@@ -1310,7 +1310,7 @@ if (!customElements.get('bulk-add')) {
 }
 
 class CartPerformance {
-    static# metric_prefix = "cart-performance"
+    static #metric_prefix = "cart-performance"
 
     static createStartingMarker(benchmarkName) {
         const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`
