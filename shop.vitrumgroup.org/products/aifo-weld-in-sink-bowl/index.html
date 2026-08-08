@@ -952,7 +952,9 @@ body{position:relative}
 .header-wrapper,.header-wrapper .header-redesign,header-drawer,.menu-drawer-container{overflow:visible!important;overflow-x:visible!important}
 header-drawer{position:relative;z-index:30}
 header-drawer summary.header__icon--menu{touch-action:manipulation;cursor:pointer;position:relative;z-index:31;-webkit-tap-highlight-color:transparent}
-header-drawer details[open].menu-opening>.menu-drawer{visibility:visible!important;transform:translate(0)!important}
+@media screen and (max-width:1279.98px){.header-redesign header-drawer details[open].menu-opening{margin-left:0!important}}
+header-drawer details[open].menu-opening>.menu-drawer{position:fixed!important;left:0!important;top:var(--header-bottom-position,64px)!important;visibility:visible!important;transform:translate(0)!important;z-index:100!important}
+.js header-drawer>details[open].menu-opening>summary.header__icon--menu:before{position:fixed!important;left:0!important;right:0!important;width:100vw!important;top:var(--header-bottom-position,64px)!important;height:calc(100vh - var(--header-bottom-position,64px))!important}
 #MainContent,.shopify-section:not(.header-wrapper),.footer,.page-width,main{max-width:100%;overflow-x:clip}
 </style>
 </head>

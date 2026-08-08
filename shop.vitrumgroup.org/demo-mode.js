@@ -398,9 +398,26 @@
       'z-index: 31;' +
       '-webkit-tap-highlight-color: transparent;' +
       '}' +
+      '@media screen and (max-width: 1279.98px) {' +
+      '.header-redesign header-drawer details[open].menu-opening {' +
+      'margin-left: 0 !important;' +
+      '}' +
+      '}' +
       'header-drawer details[open].menu-opening > .menu-drawer {' +
+      'position: fixed !important;' +
+      'left: 0 !important;' +
+      'top: var(--header-bottom-position, 64px) !important;' +
       'visibility: visible !important;' +
       'transform: translate(0) !important;' +
+      'z-index: 100 !important;' +
+      '}' +
+      '.js header-drawer > details[open].menu-opening > summary.header__icon--menu:before {' +
+      'position: fixed !important;' +
+      'left: 0 !important;' +
+      'right: 0 !important;' +
+      'width: 100vw !important;' +
+      'top: var(--header-bottom-position, 64px) !important;' +
+      'height: calc(100vh - var(--header-bottom-position, 64px)) !important;' +
       '}' +
       '#MainContent, .shopify-section:not(.header-wrapper), .footer, .page-width, main {' +
       'max-width: 100%;' +
