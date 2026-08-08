@@ -3,6 +3,13 @@ const path = require('path');
 
 const SITE_ROOT = path.join(__dirname, 'shop.vitrumgroup.org');
 const DEMO_SCRIPT = '<script src="/demo-mode.js" defer></script>';
+const DEMO_WIDGET_HIDE = `<style id="demo-widget-hide">
+#iubenda-cs-banner,#iubenda-iframe,.iubenda-cs-preferences-link,.iubenda-cs-default-floating,
+.iubenda-cs-bottom,.iubenda-cs-left,.iubenda-cs-right,[class*="iubenda-cs"],
+#whatsapp-widget-root,#chat-bubble,.whatsapp-widget,#whatsapp-link,.chat-window,
+shopify-privacy-banner,#shopify-privacy-banner-embed,#shopify-privacy-banner
+{display:none!important;visibility:hidden!important;pointer-events:none!important;opacity:0!important}
+</style>`;
 
 const DEMO_PAGES = [
   'index.html',
@@ -14,6 +21,17 @@ const DEMO_PAGES = [
   'products/oscartielle-nettuno/index.html',
   'products/aifo-weld-in-sink-bowl/index.html',
 ];
+
+function stripDemoWidgets(html) {
+  return html
+    .replace(/<script type="text\/javascript">\s*var _iub = _iub[\s\S]*?<\/script>\s*/gi, '')
+    .replace(/<script[^>]*src="[^"]*cs\.iubenda\.com\/autoblocking\/[^"]*"[^>]*><\/script>\s*/gi, '')
+    .replace(/<script[^>]*src="[^"]*cdn\.iubenda\.com\/cs\/iubenda_cs\.js"[^>]*><\/script>\s*/gi, '')
+    .replace(/<script[^>]*src="[^"]*consent-tracking\.js"[^>]*><\/script>\s*/gi, '')
+    .replace(/<script[^>]*id=['"]scb4127['"][^>]*><\/script>\s*/gi, '')
+    .replace(/<script[^>]*src="[^"]*privacy-banner\/storefront-banner\.js"[^>]*><\/script>\s*/gi, '')
+    .replace(/<script[^>]*src="[^"]*dondy-whatsapp-chat-widget[^"]*ChatBubble\.js"[^>]*><\/script>\s*/gi, '');
+}
 
 function applyDemoMode(relativePath) {
   const filePath = path.join(SITE_ROOT, relativePath);
@@ -29,6 +47,12 @@ function applyDemoMode(relativePath) {
       /<html class="([^"]*)" lang="([^"]*)">/,
       '<html class="$1" lang="$2" data-demo-mode="true">'
     );
+  }
+
+  html = stripDemoWidgets(html);
+
+  if (!html.includes('id="demo-widget-hide"')) {
+    html = html.replace('</head>', `${DEMO_WIDGET_HIDE}\n</head>`);
   }
 
   if (!html.includes('/demo-mode.js')) {

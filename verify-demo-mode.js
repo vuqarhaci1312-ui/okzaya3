@@ -24,9 +24,10 @@ const jsChecks = [
   ['main-collection-filters', js.includes('#main-collection-filters'), 'facet block selector'],
   ['capture click', js.includes("addEventListener('click'"), 'click listener'],
   ['block submit', js.includes("addEventListener('submit'"), 'submit listener'],
-  ['mega-nav shell', js.includes('mega-nav'), 'nav shell detection'],
-  ['ALLOWED fridges', js.includes('/collections/fridges-and-freezers'), 'allowlist fridges'],
-  ['ALLOWED restaurant', js.includes('/collections/restaurant'), 'allowlist restaurant'],
+  ['widget hide CSS', js.includes('demo-widget-hide'), 'widget hide styles'],
+  ['widget lockdown', js.includes('initWidgetLockdown'), 'widget lockdown init'],
+  ['whatsapp block', js.includes('whatsapp-widget'), 'whatsapp widget block'],
+  ['iubenda block', js.includes('iubenda-cs'), 'iubenda cookie block'],
 ];
 
 let failed = 0;
@@ -47,9 +48,13 @@ for (const relativePath of DEMO_PAGES) {
   const html = fs.readFileSync(filePath, 'utf8');
   const hasMarker = html.includes('data-demo-mode="true"');
   const hasScript = html.includes('/demo-mode.js');
+  const hasWidgetHide = html.includes('id="demo-widget-hide"');
+  const hasIubenda = html.includes('iubenda_cs.js');
+  const hasWhatsapp = html.includes('ChatBubble.js');
 
-  console.log(hasMarker && hasScript ? 'OK' : 'FAIL', '-', relativePath, 'demo marker + script');
-  if (!hasMarker || !hasScript) {
+  const ok = hasMarker && hasScript && hasWidgetHide && !hasIubenda && !hasWhatsapp;
+  console.log(ok ? 'OK' : 'FAIL', '-', relativePath, 'demo + widgets stripped');
+  if (!ok) {
     failed += 1;
   }
 }

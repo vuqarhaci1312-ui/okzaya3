@@ -1,6 +1,29 @@
 (function () {
   'use strict';
 
+  var WIDGET_HIDE_SELECTORS = [
+    '#iubenda-cs-banner',
+    '#iubenda-iframe',
+    '.iubenda-cs-preferences-link',
+    '.iubenda-cs-default-floating',
+    '.iubenda-cs-bottom',
+    '.iubenda-cs-left',
+    '.iubenda-cs-right',
+    '[class*="iubenda-cs"]',
+    '#whatsapp-widget-root',
+    '#chat-bubble',
+    '.whatsapp-widget',
+    '#whatsapp-link',
+    '.chat-window',
+    'shopify-privacy-banner',
+    '#shopify-privacy-banner-embed',
+    '#shopify-privacy-banner',
+  ].join(', ');
+
+  var WIDGET_CLICK_SELECTORS =
+    '#whatsapp-widget-root, #chat-bubble, .whatsapp-widget, #whatsapp-link, ' +
+    '.chat-window, [class*="iubenda-cs"], shopify-privacy-banner';
+
   var ALLOWED_HOME = {
     '/collections/fridges-and-freezers': true,
     '/collections/restaurant': true,
@@ -208,11 +231,78 @@
     }
   }
 
+  function isWidgetTarget(target) {
+    return !!target.closest(WIDGET_CLICK_SELECTORS);
+  }
+
+  function handleWidgetClick(e) {
+    if (isWidgetTarget(e.target)) {
+      blockEvent(e);
+    }
+  }
+
+  function hideWidgets(root) {
+    var scope = root || document;
+    if (scope.querySelectorAll) {
+      scope.querySelectorAll(WIDGET_HIDE_SELECTORS).forEach(function (el) {
+        el.style.setProperty('display', 'none', 'important');
+        el.style.setProperty('visibility', 'hidden', 'important');
+        el.style.setProperty('pointer-events', 'none', 'important');
+        el.setAttribute('aria-hidden', 'true');
+      });
+    }
+  }
+
+  function injectWidgetHideStyles() {
+    if (document.getElementById('demo-widget-hide')) {
+      return;
+    }
+    var style = document.createElement('style');
+    style.id = 'demo-widget-hide';
+    style.textContent =
+      WIDGET_HIDE_SELECTORS +
+      ' { display: none !important; visibility: hidden !important; pointer-events: none !important; opacity: 0 !important; }';
+    document.head.appendChild(style);
+  }
+
+  function stubCookieApis() {
+    window._iub = window._iub || [];
+    window._iub.csConfiguration = window._iub.csConfiguration || {};
+    window._iub.csConfiguration.banner = { acceptButtonDisplay: false };
+    window._iub.csReady = function () {};
+    window._iub.cookiesReady = function () {};
+    if (window.Shopify && window.Shopify.customerPrivacy) {
+      window.Shopify.customerPrivacy.setTrackingConsent = function () {};
+    }
+  }
+
+  function initWidgetLockdown() {
+    injectWidgetHideStyles();
+    stubCookieApis();
+    hideWidgets(document);
+
+    if (typeof MutationObserver !== 'undefined') {
+      var observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          mutation.addedNodes.forEach(function (node) {
+            if (node.nodeType === 1) {
+              hideWidgets(node);
+            }
+          });
+        });
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    }
+
+    document.addEventListener('click', handleWidgetClick, true);
+  }
+
   var mode = getMode();
   if (!mode) {
     return;
   }
 
+  initWidgetLockdown();
   document.addEventListener('click', handleClick, true);
   document.addEventListener('submit', handleSubmit, true);
   document.addEventListener('keydown', handleKeydown, true);
