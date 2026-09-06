@@ -6,3 +6,12 @@ Thumbs.db
 *.log
 .cursor/
 .vercel/
+vitrum-project-cache/
+vitrum-about-us-cache.html
+vitrum-all-projects-raw.html
+vitrum-project-kice-raw.html
+vitrum-slider-css.html
+vitrum-slider-init-snippet.txt
+_extract-kice-texts.js
+analyze-vitrum-all-projects.js
+

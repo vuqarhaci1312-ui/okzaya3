@@ -1,0 +1,220 @@
+/* Ana səhifə header: axtarış, səbət, daxil ol, sorğu, biznes növü, dil sətri yox */
+
+html[data-home-header="true"] .header-redesign__search,
+html[data-home-header="true"] .header-redesign__modal-search,
+html[data-home-header="true"] .header-redesign__actions,
+html[data-home-header="true"] .header-redesign__action--cart,
+html[data-home-header="true"] .header-redesign__action--account,
+html[data-home-header="true"] .header-redesign__action--enquiry,
+html[data-home-header="true"] cart-drawer,
+html[data-home-header="true"] .menu-drawer__account,
+html[data-home-header="true"] #shopify-section-sections--29323674845561__header-benefits,
+html[data-home-header="true"] .header-benefits-section,
+html[data-home-header="true"] #shopify-section-sections--29323674845561__announcement-bar,
+html[data-home-header="true"] .announcement-bar-section,
+html[data-home-header="true"] #Details-menu-drawer-menu-item-2,
+html[data-home-header="true"] .menu-drawer__search,
+html[data-home-header="true"] .mega-nav__lang,
+html[data-home-header="true"] .menu-drawer__localization,
+html[data-home-header="true"] .header-localization,
+html[data-home-header="true"] .mega-nav__tab,
+html[data-home-header="true"] .mega-nav__separator,
+html[data-home-header="true"] .mega-nav__panels,
+html[data-home-header="true"] .mega-nav__scrim,
+html[data-home-header="true"] #Details-menu-drawer-menu-item-1,
+html[data-home-header="true"] .menu-drawer__menu > li:has(#Details-menu-drawer-menu-item-1),
+html[data-home-header="true"] #shopify-section-template--29323675173241__image_banner .banner__content,
+html[data-home-header="true"] #shopify-section-template--29323675173241__image_banner .banner__box {
+  display: none !important;
+}
+
+html[data-home-header="true"] .header-redesign__logo-image {
+  width: min(70vw, 240px) !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  transform: none !important;
+}
+
+@media screen and (min-width: 1280px) {
+  html[data-home-header="true"] .header-redesign {
+    position: relative;
+  }
+
+  html[data-home-header="true"] .header-redesign__row {
+    height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  html[data-home-header="true"] .header-redesign__heading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 6;
+    width: 280px;
+    height: 148px;
+    margin: 0;
+    padding: 0 16px 0 32px;
+    box-sizing: border-box;
+    display: flex !important;
+    align-items: center;
+    background: transparent;
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  html[data-home-header="true"] .header-redesign .header-redesign__logo {
+    pointer-events: auto;
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  html[data-home-header="true"] .header-redesign__logo-image {
+    width: 240px !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: contain;
+  }
+
+  html[data-home-header="true"] mega-nav,
+  html[data-home-header="true"] .mega-nav__nav {
+    overflow: visible !important;
+    z-index: 5;
+  }
+
+  html[data-home-header="true"] .mega-nav__row {
+    height: 148px;
+    max-width: none;
+    overflow: visible !important;
+    overflow-x: visible !important;
+  }
+
+  html[data-home-header="true"] .mega-nav__row::before {
+    content: "";
+    flex: 0 0 280px;
+    width: 280px;
+    box-sizing: border-box;
+    border-right: 1px solid var(--vh-divider, #4d4d4d);
+  }
+
+  html[data-home-header="true"] .mega-nav__quicklinks {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 148px;
+    gap: 32px;
+    padding: 0 28px 0 24px;
+    overflow: visible;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  html[data-home-header="true"] .mega-nav__quicklink {
+    font-size: 17px;
+    letter-spacing: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    flex: 0 0 auto;
+  }
+
+  html[data-home-header="true"] .nav-dd {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    align-self: stretch;
+    height: 148px;
+    flex: 0 0 auto;
+  }
+
+  html[data-home-header="true"] .nav-dd > summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    color: #fff;
+  }
+
+  html[data-home-header="true"] .nav-dd > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  html[data-home-header="true"] .nav-dd__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: max(100%, 220px);
+    width: max-content;
+    padding: 8px 0;
+    background: #fff;
+    color: #141313;
+    border: none;
+    border-top: 1px solid var(--vh-ink, #141313);
+    border-bottom: 1px solid var(--vh-ink, #141313);
+    box-shadow: 0 26px 46px #0003;
+    z-index: 4;
+    animation: mega-nav-panel-in 0.16s ease-out;
+  }
+
+  html[data-home-header="true"] .nav-dd[open] > .nav-dd__menu,
+  html[data-home-header="true"] .nav-dd:hover > .nav-dd__menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  html[data-home-header="true"] .nav-dd__menu a {
+    display: block;
+    padding: 14px 20px;
+    color: #141313;
+    text-decoration: none;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  html[data-home-header="true"] .nav-dd__menu a:hover {
+    background: #f2f2f2;
+  }
+
+  html[data-home-header="true"] .nav-dd:last-of-type .nav-dd__menu {
+    left: auto;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1679.98px) {
+  html[data-home-header="true"] .mega-nav__quicklinks {
+    padding: 0 20px 0 12px;
+  }
+}
+
+html[data-home-header="true"] .placeholder-collection {
+  padding: 48px 32px 80px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+html[data-home-header="true"] .placeholder-collection h1 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+html[data-home-header="true"] .placeholder-collection p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+

@@ -1,0 +1,177 @@
+/* Vitrum layihə səhifəsi: Özkaya header/footer + orijinal Vitrum məzmunu */
+
+html.vitrum-project-page {
+  font-size: 62.5%;
+}
+
+html.vitrum-project-page .ozkaya-shop-chrome,
+html.vitrum-project-page .ozkaya-shop-chrome * {
+  font-family: var(--font-body-family) !important;
+  font-style: var(--font-body-style);
+  font-weight: revert;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: inherit;
+  color: rgb(var(--color-foreground));
+  -webkit-font-smoothing: antialiased;
+}
+
+html.vitrum-project-page .ozkaya-shop-chrome--header {
+  position: relative;
+  z-index: 40;
+  font-size: 1.6rem;
+}
+
+html.vitrum-project-page .ozkaya-shop-chrome--footer {
+  position: relative;
+  z-index: 5;
+  font-size: 1.6rem;
+}
+
+html.vitrum-project-page .ozkaya-shop-chrome--footer .footer {
+  margin-top: 0 !important;
+}
+
+html.vitrum-project-page .page-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  overflow-x: clip;
+  font-family: Barlow, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #141313;
+  background: #fff;
+}
+
+html.vitrum-project-page .page-wrapper img {
+  max-width: none !important;
+  height: auto;
+}
+
+/* zoom/62.5% en yox: kök şrifti 16px olsun ki, Webflow rem tam en və düzgün ölçü versin */
+html.vitrum-about-page {
+  font-size: 100% !important;
+}
+
+html.vitrum-about-page body {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+
+html.vitrum-about-page .page-wrapper,
+html.vitrum-about-page .main-wrapper,
+html.vitrum-about-page .section_header145,
+html.vitrum-about-page .header145_component {
+  width: 100% !important;
+  max-width: 100% !important;
+  zoom: unset;
+  transform: none;
+  overflow-x: clip;
+}
+
+html.vitrum-about-page .section_header145 [style*='opacity:0'] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+html.vitrum-about-page .ozkaya-shop-chrome--header,
+html.vitrum-about-page .ozkaya-shop-chrome--footer {
+  font-size: 16px;
+}
+
+html.vitrum-about-page .ozkaya-about-years {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.6rem;
+  font-family: Barlow, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+html.vitrum-about-page .ozkaya-about-years__num {
+  display: block;
+  font-size: clamp(5.5rem, 12vw, 9rem);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.85;
+  text-transform: none;
+}
+
+html.vitrum-project-page .page-wrapper :is(h1, h2, h3, h4, h5, h6, p) {
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  word-break: normal;
+}
+
+html.vitrum-project-page .navbar16_component,
+html.vitrum-project-page .footer15_component,
+html.vitrum-project-page .contact-modal3_component {
+  display: none !important;
+}
+
+html.vitrum-project-page:not(.vitrum-about-page) .page-wrapper .heading-style-h3,
+html.vitrum-project-page:not(.vitrum-about-page) .page-wrapper .heading-style-h1,
+html.vitrum-project-page:not(.vitrum-about-page) .page-wrapper .heading-style-h4 {
+  font-family: Barlow, sans-serif;
+  font-weight: 500;
+  color: inherit;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+html.vitrum-project-page:not(.vitrum-about-page) .section_content18.background-color-alternative,
+html.vitrum-project-page:not(.vitrum-about-page) .background-color-alternative {
+  background-color: #f4f2ee;
+}
+
+html.vitrum-project-page:not(.vitrum-about-page) .content18_content-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 3.2rem 4.8rem;
+  align-items: start;
+}
+
+html.vitrum-project-page:not(.vitrum-about-page) .content18_content-wrapper._2 {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+}
+
+html.vitrum-project-page:not(.vitrum-about-page) .text-rich-text-alternate,
+html.vitrum-project-page:not(.vitrum-about-page) .text-rich-text {
+  font-size: 1.8rem;
+  line-height: 1.55;
+  color: #3a3836;
+}
+
+html.vitrum-project-page:not(.vitrum-about-page) .content18_image-wrapper {
+  margin-top: 4rem;
+}
+
+html.vitrum-project-page:not(.vitrum-about-page) .content18_image,
+html.vitrum-project-page:not(.vitrum-about-page) .solutions-slider_image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100% !important;
+  object-fit: cover;
+}
+
+html.vitrum-project-page:not(.vitrum-about-page) .solutions-slider {
+  margin-top: 2.4rem;
+}
+
+@media screen and (max-width: 767px) {
+  html.vitrum-project-page:not(.vitrum-about-page) .content18_content-wrapper,
+  html.vitrum-project-page:not(.vitrum-about-page) .content18_content-wrapper._2 {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+}

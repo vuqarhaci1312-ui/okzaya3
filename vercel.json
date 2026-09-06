@@ -1,12 +1,7 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "shop.vitrumgroup.org",
   "cleanUrls": true,
-  "trailingSlash": false,
+  "trailingSlash": true,
   "rewrites": [
-    {
-      "source": "/cdn/:path*",
-      "destination": "https://shop.vitrumgroup.org/cdn/:path*"
-    }
+    { "source": "/:path*", "destination": "/shop.vitrumgroup.org/:path*" }
   ]
 }

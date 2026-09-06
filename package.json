@@ -2,6 +2,10 @@
   "name": "vitrum-shop-local",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build:kice": "node build-all-projects-page.js",
+    "build:about": "node build-about-us-page.js",
+    "build:empero": "node scrape-empero-catalog.js && node build-empero-collections.js && node build-empero-products.js",
+    "build:all": "node scrape-empero-catalog.js && node build-empero-collections.js && node build-empero-products.js && node build-about-us-page.js && node build-all-projects-page.js && node apply-demo-mode.js"
   }
 }

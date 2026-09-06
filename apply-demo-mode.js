@@ -10,25 +10,20 @@ const DEMO_WIDGET_HIDE = `<style id="demo-widget-hide">
 #whatsapp-widget-root,#chat-bubble,.whatsapp-widget,#whatsapp-link,.chat-window,
 shopify-privacy-banner,#shopify-privacy-banner-embed,#shopify-privacy-banner
 {display:none!important;visibility:hidden!important;pointer-events:none!important;opacity:0!important}
-html,body{overflow-x:hidden!important;max-width:100%!important;width:100%!important;overscroll-behavior-x:none}
+html,body{max-width:100%!important;width:100%!important;overscroll-behavior-x:none}
 body{position:relative}
 .header-wrapper,.header-wrapper .header-redesign,header-drawer,.menu-drawer-container,.menu-drawer{overflow:visible!important;overflow-x:visible!important}
 .js header-drawer>details[open].menu-opening>summary.header__icon--menu:before{display:none!important}
 header-drawer details[open].menu-opening>.menu-drawer{visibility:visible!important;transform:translate(0)!important;z-index:5!important}
 @media screen and (max-width:749.98px){.header-redesign header-drawer details[open].menu-opening>.menu-drawer{left:calc(-1.2rem + 9px)!important}}
 @media screen and (min-width:750px) and (max-width:1279.98px){.header-redesign header-drawer details[open].menu-opening>.menu-drawer{left:calc(-5rem + 9px)!important}}
-#MainContent,.shopify-section:not(.header-wrapper),.footer,.page-width,main{max-width:100%;overflow-x:clip}
+#MainContent,main{max-width:100%;overflow-x:clip}
 </style>`;
 
 const DEMO_PAGES = [
   'index.html',
-  'collections/fridges-and-freezers/index.html',
-  'collections/restaurant/index.html',
-  'products/ur90g-sub-zero/index.html',
-  'products/scandomestic-sf-115/index.html',
-  'products/termofrost-eco-clear-x/index.html',
-  'products/oscartielle-nettuno/index.html',
-  'products/aifo-weld-in-sink-bowl/index.html',
+  'about-us/index.html',
+  'all-projects/index.html',
 ];
 
 function stripDemoWidgets(html) {
@@ -83,11 +78,28 @@ function applyDemoMode(relativePath) {
   return true;
 }
 
+function walkIndexPages(dirName, files) {
+  const dir = path.join(SITE_ROOT, dirName);
+  if (!fs.existsSync(dir)) {
+    return;
+  }
+  for (const name of fs.readdirSync(dir)) {
+    const full = path.join(dir, name, 'index.html');
+    if (fs.existsSync(full)) {
+      files.push(path.relative(SITE_ROOT, full).replace(/\\/g, '/'));
+    }
+  }
+}
+
 let applied = 0;
-for (const page of DEMO_PAGES) {
+const pages = [...DEMO_PAGES];
+walkIndexPages('collections', pages);
+walkIndexPages('products', pages);
+walkIndexPages('projects', pages);
+for (const page of pages) {
   if (applyDemoMode(page)) {
     applied += 1;
   }
 }
 
-console.log(`Done. Applied demo mode to ${applied}/${DEMO_PAGES.length} pages.`);
+console.log(`Done. Applied demo mode to ${applied}/${pages.length} pages.`);

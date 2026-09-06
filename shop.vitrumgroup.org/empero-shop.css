@@ -1,0 +1,174 @@
+html.empero-catalog-page body {
+  margin: 0;
+}
+
+html.empero-catalog-page .empero-collection,
+html.empero-catalog-page .empero-product {
+  font-family: var(--font-body-family, 'FFF Acid Grotesk', sans-serif);
+  color: rgb(var(--color-foreground, 20 19 19));
+  background: #fff;
+}
+
+.empero-collection {
+  padding: 4.8rem 0 8rem;
+}
+
+.empero-collection__hero {
+  margin: 0 0 3.2rem;
+}
+
+.empero-collection__hero h1 {
+  margin: 0;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(3.2rem, 4vw, 4.8rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.empero-collection__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 3.2rem 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.empero-card {
+  min-width: 0;
+}
+
+.empero-card__media {
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #f4f2ee;
+  text-decoration: none;
+}
+
+.empero-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.empero-card__title {
+  display: block;
+  margin: 1.2rem 0 0;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+}
+
+.empero-card__title:hover {
+  opacity: 0.7;
+}
+
+.empero-product {
+  padding: 4.8rem 0 8rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 4.8rem;
+  align-items: start;
+}
+
+.empero-product__gallery > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #f4f2ee;
+  margin-bottom: 1.2rem;
+}
+
+.empero-product__thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.empero-product__thumbs img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #f4f2ee;
+  display: block;
+}
+
+.empero-product h1 {
+  margin: 0 0 1.6rem;
+  font-size: clamp(2.8rem, 3vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.empero-product__desc {
+  font-size: 1.6rem;
+  line-height: 1.55;
+  margin: 0 0 2.4rem;
+}
+
+.empero-product__features {
+  padding-left: 1.8rem;
+  margin: 0 0 2.8rem;
+}
+
+.empero-product__features li {
+  margin: 0 0 0.8rem;
+  font-size: 1.5rem;
+}
+
+.empero-product__specs {
+  overflow-x: auto;
+}
+
+.empero-product__specs table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.3rem;
+}
+
+.empero-product__specs td,
+.empero-product__specs th {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  vertical-align: middle;
+}
+
+.empero-product__back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.empero-product__back:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 990px) {
+  .empero-collection__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .empero-product {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .empero-collection,
+  .empero-product {
+    padding: 3.2rem 0 4.8rem;
+  }
+
+  .empero-collection__grid {
+    gap: 2rem 1.2rem;
+  }
+}

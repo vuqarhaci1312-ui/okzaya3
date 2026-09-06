@@ -1,0 +1,202 @@
+{
+  "origin": "https://empero.com.tr",
+  "maxPerCollection": 16,
+  "collections": [
+    {
+      "slug": "calisma-dezgahlari",
+      "title": "Çalışma dəzgahları",
+      "families": [
+        "detay-calisma-tezgahi-demonte-319",
+        "detay-calisma-tezgahi-alt-rafli-demonte-320",
+        "detay-calisma-tezgahi-alt-ara-rafli-demonte-321",
+        "detay-calisma-tezgahi-polietilen-demonte-322",
+        "detay-calisma-tezgahi-alt-rafli-polietilen-demonte-323",
+        "detay-dolapli-calisma-tezgahi-kaynakli-324",
+        "detay-dolapli-calisma-tezgahi-kaynakli-325",
+        "detay-kose-tezgahlari-326",
+        "detay-set-alti-tezgahlar-116",
+        "detay-set-alti-tezgahlar-484",
+        "detay-set-alti-tezgahlar-169",
+        "detay-set-alti-tezgahlar-141",
+        "detay-ara-tezgahlar-117",
+        "detay-ara-tezgahlar-140",
+        "detay-ara-tezgahlar-168"
+      ]
+    },
+    {
+      "slug": "yuma-vannasi",
+      "title": "Yuma vannası",
+      "families": [
+        "detay-1-evyeli-tezgahlar-600-700-demonte-329",
+        "detay-1-evyeli-tezgahlar-600-700-demonte-330",
+        "detay-1-evyeli-tezgahlar-700-demonte-331",
+        "detay-1-evyeli-tezgahlar-600-700-demonte-332",
+        "detay-2-evyeli-tezgahlar-600-700-demonte-333",
+        "detay-2-evyeli-tezgahlar-700-demonte-334",
+        "detay-2-evyeli-tezgahlar-600-700-demonte-335",
+        "detay-3-evyeli-tezgahlar-600-700-demonte-336",
+        "detay-el-yikama-evyeleri-53",
+        "detay-sebze-yikama-tezgahlari-338"
+      ]
+    },
+    {
+      "slug": "tekli-yuma-vannasi",
+      "title": "Təkli yuma vannası",
+      "families": [
+        "detay-1-evyeli-tezgahlar-600-700-demonte-329",
+        "detay-1-evyeli-tezgahlar-600-700-demonte-330",
+        "detay-1-evyeli-tezgahlar-700-demonte-331",
+        "detay-1-evyeli-tezgahlar-600-700-demonte-332",
+        "detay-el-yikama-evyeleri-53"
+      ]
+    },
+    {
+      "slug": "2-li-yuma-vannasi",
+      "title": "2-li yuma vannası",
+      "families": [
+        "detay-2-evyeli-tezgahlar-600-700-demonte-333",
+        "detay-2-evyeli-tezgahlar-700-demonte-334",
+        "detay-2-evyeli-tezgahlar-600-700-demonte-335"
+      ]
+    },
+    {
+      "slug": "3-lu-yuma-vannasi",
+      "title": "3-lü yuma vannası",
+      "families": ["detay-3-evyeli-tezgahlar-600-700-demonte-336"]
+    },
+    {
+      "slug": "teravez-yuma-vannasi",
+      "title": "Tərəvəz yuma vannası",
+      "families": ["detay-sebze-yikama-tezgahlari-338"]
+    },
+    {
+      "slug": "qazan-yuma-vannasi",
+      "title": "Qazan yuma vannası",
+      "families": ["detay-3-evyeli-tezgahlar-600-700-demonte-336"]
+    },
+    {
+      "slug": "elektrik-ve-qaz-pilteeleri",
+      "title": "Elektrik və qaz piltələri",
+      "families": [
+        "detay-gazli-ocaklar-479",
+        "detay-yuksek-yanisli-gazli-ocak-103",
+        "detay-ocaklar-104",
+        "detay-mini-setustu-elektrikli-induksiyonlu-ocaklar-77",
+        "detay-mini-setustu-elektrikli-ocaklar-yuvarlak-pleyt-78",
+        "detay-mini-setustu-gazli-ocaklar-79",
+        "detay-gazli-ocaklar-118",
+        "detay-gazli-ocaklar-119",
+        "detay-elektrikli-ocaklar-yuvarlak-pleyt-122",
+        "detay-elektrikli-ocaklar-kare-pleyt-123",
+        "detay-elektrikli-induksiyon-ocaklar-124",
+        "detay-elektrikli-ocaklar-rus-tipi-pleyt-125",
+        "detay-gazli-ocaklar-148",
+        "detay-yer-ocaklari-147",
+        "detay-elektrikli-ocaklar-kare-pleytli-151",
+        "detay-elektrikli-induksiyon-ocaklar-152"
+      ]
+    },
+    {
+      "slug": "2-gozlu",
+      "title": "2 gözlü",
+      "families": [
+        "detay-gazli-ocaklar-479",
+        "detay-yuksek-yanisli-gazli-ocak-103",
+        "detay-ocaklar-104",
+        "detay-mini-setustu-elektrikli-induksiyonlu-ocaklar-77",
+        "detay-mini-setustu-elektrikli-ocaklar-yuvarlak-pleyt-78",
+        "detay-mini-setustu-gazli-ocaklar-79"
+      ]
+    },
+    {
+      "slug": "4-gozlu",
+      "title": "4 gözlü",
+      "families": [
+        "detay-gazli-ocaklar-118",
+        "detay-gazli-ocaklar-119",
+        "detay-elektrikli-ocaklar-yuvarlak-pleyt-122",
+        "detay-elektrikli-ocaklar-kare-pleyt-123",
+        "detay-elektrikli-induksiyon-ocaklar-124",
+        "detay-elektrikli-ocaklar-rus-tipi-pleyt-125"
+      ]
+    },
+    {
+      "slug": "6-gozlu",
+      "title": "6 gözlü",
+      "families": [
+        "detay-gazli-ocaklar-148",
+        "detay-yer-ocaklari-147",
+        "detay-elektrikli-ocaklar-kare-pleytli-151",
+        "detay-elektrikli-induksiyon-ocaklar-152",
+        "detay-elektrikli-ocaklar-rus-tipi-pleyt-153"
+      ]
+    },
+    {
+      "slug": "firinlar",
+      "title": "Fırınlar",
+      "families": [
+        "detay-gazli-tandir-firinlari-176",
+        "detay-odunlu-ve-gazli-smoke-firin-502",
+        "detay-profesyonel-komurlu-firinlar-177",
+        "detay-kuzu-pisirme-firinlari-179",
+        "detay-gazli-plus-konveksiyonlu-firinlar-181",
+        "detay-elektrikli-plus-konveksiyonlu-firinlar-183",
+        "detay-gazli-kombi-firinlar-503",
+        "detay-elektrikli-kombi-firinlar-504",
+        "detay-gazli-kombi-firinlar-186",
+        "detay-elektrikli-kombi-firinlar-188",
+        "detay-elektrikli-mini-konveksiyonlu-firinlar-190",
+        "detay-elektrikli-pizza-firinlari-tek-katli-213",
+        "detay-gazli-pizza-firinlari-tek-katli-215",
+        "detay-gazli-pizza-pide-firini-209",
+        "detay-elektrikli-gold-midi-pizza-firinlari-211",
+        "detay-gazli-set-alti-firinlar-121"
+      ]
+    },
+    {
+      "slug": "bar-dezgahlari",
+      "title": "Bar dəzgahları",
+      "families": [
+        "detay-galata-notr-servis-uniteleri-268",
+        "detay-galata-notr-servis-uniteleri-nefeslikli-269",
+        "detay-kapadokya-notr-servis-uniteleri-279",
+        "detay-kapadokya-notr-servis-uniteleri-nefeslikli-280",
+        "detay-sumela-notr-servis-uniteleri-290",
+        "detay-sumela-notr-servis-uniteleri-nefeslikli-291",
+        "detay-set-alti-buzdolaplari-kokteyl-tezgahi-505",
+        "detay-galata-soguk-servis-uniteleri-nefeslikli-270",
+        "detay-galata-sicak-servis-uniteleri-nefeslikli-272"
+      ]
+    },
+    {
+      "slug": "fridges-and-freezers",
+      "title": "Soyuducular",
+      "families": [
+        "detay-tezgah-tipi-buzdolaplari-fanli-220",
+        "detay-tezgah-tipi-derin-dondurucular-fanli-sogutma-221",
+        "detay-dik-tip-buzdolaplari-fanli-sogutma-223",
+        "detay-dik-tip-derin-dondurucular-fanli-sogutma-224",
+        "detay-camli-dik-tip-buzdolaplari-fanli-sogutma-225",
+        "detay-tek-kapili-tezgah-tipi-buzdolaplari-226",
+        "detay-cekmeceli-tezgah-tipi-buzdolaplarifanli-228",
+        "detay-set-alti-buzdolaplari-fanli-sogutma-232",
+        "detay-set-alti-derin-dondurucular-fanli-sogutma-233",
+        "detay-evyeli-tezgah-tipi-buzdolaplari-231",
+        "detay-camli-tezgah-tipi-buzdolaplari-fanli-sogutma-222",
+        "detay-pizza-ve-salata-hazirlik-buzdolaplari-235",
+        "detay-set-ustu-saladbarlar-238",
+        "detay-dik-tip-pastane-buzdolaplari-fanli-sogutma-244",
+        "detay-set-alti-buzdolaplari-kokteyl-tezgahi-505",
+        "detay-camli-tezgah-tipi-buzdolaplari-fanli-sogutma-230"
+      ]
+    },
+    {
+      "slug": "camasirxana-avadanliqlari",
+      "title": "Çamaşırxana",
+      "families": [
+        "detay-hijyenik-bariyerli-camasir-yikama-sikma-makinesi-412",
+        "detay-hijyenik-bariyerli-camasir-yikama-sikma-makinesi-413"
+      ]
+    }
+  ]
+}

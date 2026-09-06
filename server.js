@@ -8,6 +8,7 @@ const PORT = 8080;
 const SITE_ROOT = path.join(__dirname, 'shop.vitrumgroup.org');
 const REMOTE_ORIGIN = 'https://shop.vitrumgroup.org';
 const LOCAL_ORIGIN = `http://localhost:${PORT}`;
+const KICE_DETAIL_PATH = '/projects/kice-restaurant';
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -98,6 +99,18 @@ function serveLocal(filePath, req, res) {
 
 const server = http.createServer((req, res) => {
   const urlPath = decodeURIComponent(new URL(req.url, LOCAL_ORIGIN).pathname);
+
+  if (urlPath.startsWith('/projects/')) {
+    const normalized = urlPath.replace(/\/$/, '') || '/';
+    const kiceBase = KICE_DETAIL_PATH.replace(/\/$/, '');
+    if (normalized !== kiceBase) {
+      const redirectTo = kiceBase + (urlPath.endsWith('/') ? '/' : '');
+      res.writeHead(302, { Location: redirectTo });
+      res.end();
+      return;
+    }
+  }
+
   let filePath = path.join(SITE_ROOT, urlPath);
 
   if (urlPath.endsWith('/')) {

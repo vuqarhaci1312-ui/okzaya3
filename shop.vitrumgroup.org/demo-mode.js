@@ -25,18 +25,35 @@
     '.chat-window, [class*="iubenda-cs"], shopify-privacy-banner';
 
   var DEMO_MOBILE_CSS =
-    'html,body{overflow-x:hidden!important;max-width:100%!important;width:100%!important;overscroll-behavior-x:none}' +
+    'html,body{max-width:100%!important;width:100%!important;overscroll-behavior-x:none}' +
     'body{position:relative}' +
     '.header-wrapper,.header-wrapper .header-redesign,header-drawer,.menu-drawer-container,.menu-drawer{overflow:visible!important;overflow-x:visible!important}' +
     '.js header-drawer>details[open].menu-opening>summary.header__icon--menu:before{display:none!important}' +
     'header-drawer details[open].menu-opening>.menu-drawer{visibility:visible!important;transform:translate(0)!important;z-index:5!important}' +
     '@media screen and (max-width:749.98px){.header-redesign header-drawer details[open].menu-opening>.menu-drawer{left:calc(-1.2rem + 9px)!important}}' +
     '@media screen and (min-width:750px) and (max-width:1279.98px){.header-redesign header-drawer details[open].menu-opening>.menu-drawer{left:calc(-5rem + 9px)!important}}' +
-    '#MainContent,.shopify-section:not(.header-wrapper),.footer,.page-width,main{max-width:100%;overflow-x:clip}';
+    '#MainContent,main{max-width:100%;overflow-x:clip}';
 
   var ALLOWED_HOME = {
     '/collections/fridges-and-freezers': true,
     '/collections/restaurant': true,
+    '/collections/calisma-dezgahlari': true,
+    '/collections/yuma-vannasi': true,
+    '/collections/tekli-yuma-vannasi': true,
+    '/collections/2-li-yuma-vannasi': true,
+    '/collections/3-lu-yuma-vannasi': true,
+    '/collections/teravez-yuma-vannasi': true,
+    '/collections/qazan-yuma-vannasi': true,
+    '/collections/elektrik-ve-qaz-pilteeleri': true,
+    '/collections/2-gozlu': true,
+    '/collections/4-gozlu': true,
+    '/collections/6-gozlu': true,
+    '/collections/firinlar': true,
+    '/collections/bar-dezgahlari': true,
+    '/collections/camasirxana-avadanliqlari': true,
+    '/collections/proyektler': true,
+    '/all-projects': true,
+    '/about-us': true,
   };
 
   var ALLOWED_PRODUCTS = {
@@ -48,7 +65,6 @@
   };
 
   var LOCKED_COLLECTIONS = {
-    '/collections/fridges-and-freezers': true,
     '/collections/restaurant': true,
   };
 
@@ -90,17 +106,42 @@
     return null;
   }
 
+  function isWhatsAppHref(href) {
+    if (!href) {
+      return false;
+    }
+    return href.indexOf('wa.me/') !== -1 || href.indexOf('whatsapp.com') !== -1;
+  }
+
   function isAllowedHomeHref(href) {
+    if (isWhatsAppHref(href)) {
+      return true;
+    }
     var path = normalizePath(href);
-    return path !== null && ALLOWED_HOME[path] === true;
+    if (path === null) {
+      return false;
+    }
+    if (ALLOWED_HOME[path] === true) {
+      return true;
+    }
+    if (path.indexOf('/products/empero-') === 0) {
+      return true;
+    }
+    return path.indexOf('/projects/') === 0;
   }
 
   function isAllowedLockedHref(href) {
+    if (isWhatsAppHref(href)) {
+      return true;
+    }
     var path = normalizePath(href);
     if (path === null) {
       return false;
     }
     if (path === '/') {
+      return true;
+    }
+    if (path === '/about-us' || path.indexOf('/products/empero-') === 0) {
       return true;
     }
     return ALLOWED_PRODUCTS[path] === true;
@@ -160,8 +201,21 @@
   function handleHomeClick(e) {
     var target = e.target;
 
+    if (target.closest('#ozkaya-whatsapp-fab')) {
+      return;
+    }
+
     if (isMenuDrawerControl(target) || isNavShell(target)) {
       blockLinkIfNeeded(e, target, isAllowedHomeHref);
+      return;
+    }
+
+    if (
+      target.closest('.ozkaya-featured-projects') ||
+      target.closest('.ozkaya-vitrum-all-projects') ||
+      target.closest('.ozkaya-all-projects') ||
+      target.closest('.ozkaya-vitrum-project')
+    ) {
       return;
     }
 
@@ -373,6 +427,33 @@
     }
   }
 
+  function injectWhatsAppFab() {
+    if (document.getElementById('ozkaya-whatsapp-fab')) {
+      return;
+    }
+
+    if (!document.getElementById('ozkaya-whatsapp-fab-style')) {
+      var style = document.createElement('style');
+      style.id = 'ozkaya-whatsapp-fab-style';
+      style.textContent =
+        '#ozkaya-whatsapp-fab{position:fixed;right:max(24px,env(safe-area-inset-right));bottom:max(24px,env(safe-area-inset-bottom));z-index:2147483000;width:58px;height:58px;border-radius:50%;background:#25d366;box-shadow:0 8px 24px rgba(20,19,19,.22);display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none}' +
+        '#ozkaya-whatsapp-fab:hover{transform:scale(1.06);background:#1ebe5d}' +
+        '#ozkaya-whatsapp-fab svg{width:30px;height:30px;display:block}' +
+        '@media screen and (max-width:749px){#ozkaya-whatsapp-fab{width:52px;height:52px}#ozkaya-whatsapp-fab svg{width:26px;height:26px}}';
+      document.head.appendChild(style);
+    }
+
+    var link = document.createElement('a');
+    link.id = 'ozkaya-whatsapp-fab';
+    link.href = 'https://wa.me/994558165354';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.setAttribute('aria-label', 'WhatsApp: +994 55 816 53 54');
+    link.innerHTML =
+      '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 2.1 17.2L1 23l5.9-1.1A11 11 0 0 0 21 12a10.9 10.9 0 0 0-.5-8.5ZM12 20.2a9.1 9.1 0 0 1-4.6-1.3l-.3-.2-3.5.7.7-3.4-.2-.3A9.2 9.2 0 1 1 12 20.2Zm5-6.8c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.5 7.5 0 0 1-2.2-1.4 8.3 8.3 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.4-.5.1-.3c0-.1 0-.3 0-.4s-.6-1.4-.8-1.9-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.8 11.8 0 0 0 4.5 4 15 15 0 0 0 1.5.6 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c0-.1-.2-.2-.5-.3Z"/></svg>';
+    document.body.appendChild(link);
+  }
+
   function initDemoInteraction() {
     initWidgetLockdown();
     initMobileMenuFallback();
@@ -381,14 +462,16 @@
     document.addEventListener('keydown', handleKeydown, false);
   }
 
-  var mode = getMode();
-  if (!mode) {
-    return;
+  function boot() {
+    injectWhatsAppFab();
+    if (getMode()) {
+      initDemoInteraction();
+    }
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initDemoInteraction);
+    document.addEventListener('DOMContentLoaded', boot);
   } else {
-    initDemoInteraction();
+    boot();
   }
 })();

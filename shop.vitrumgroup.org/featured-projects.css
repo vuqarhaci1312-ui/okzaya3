@@ -1,0 +1,180 @@
+/* Görülmiş işlər — Vitrum Featured projects dizaynı, yalnız bu bölmə üçün */
+
+.ozkaya-featured-projects {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  font-family: Barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #141313;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.ozkaya-featured-projects *,
+.ozkaya-featured-projects *::before,
+.ozkaya-featured-projects *::after {
+  box-sizing: border-box;
+}
+
+.ozkaya-featured-projects a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ozkaya-featured-projects__inner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--page-width, 160rem);
+  padding: 4.8rem 5rem 8rem;
+}
+
+.ozkaya-featured-projects__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.6rem;
+}
+
+.ozkaya-featured-projects__title {
+  margin: 0;
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: rgb(var(--color-foreground));
+}
+
+@media screen and (min-width: 750px) {
+  .ozkaya-featured-projects .ozkaya-featured-projects__title {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .ozkaya-featured-projects .ozkaya-featured-projects__title {
+    font-size: 2.2rem;
+  }
+}
+
+.ozkaya-featured-projects__all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #0066ff;
+  white-space: nowrap;
+}
+
+.ozkaya-featured-projects__all svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.ozkaya-featured-projects .ozkaya-projects-slider {
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.ozkaya-featured-projects .ozkaya-projects-slider.is-dragging {
+  cursor: grabbing;
+}
+
+.ozkaya-featured-projects .splide__track {
+  overflow: visible;
+}
+
+.ozkaya-featured-projects .splide__slide {
+  opacity: 1;
+}
+
+.ozkaya-featured-projects .project-card--static {
+  cursor: default;
+}
+
+.ozkaya-featured-projects .project-card--static .project-card__title {
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.ozkaya-featured-projects .project-card__image-wrap {
+  display: block;
+  overflow: hidden;
+  height: 32rem;
+  margin-bottom: 0;
+  transition: height 0.45s ease;
+}
+
+.ozkaya-featured-projects .project-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.08);
+  transition: transform 0.45s ease;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.ozkaya-featured-projects .project-card__tags,
+.ozkaya-featured-projects .project-card__desc {
+  display: none;
+}
+
+.ozkaya-featured-projects .project-card__title {
+  display: block;
+  margin: 1.2rem 0 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #141313;
+}
+
+.ozkaya-featured-projects .splide__arrows {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+  .ozkaya-featured-projects__inner {
+    padding: 3.2rem 2.4rem 5.6rem;
+  }
+
+  .ozkaya-featured-projects .project-card__image-wrap {
+    height: 22rem;
+  }
+
+  .ozkaya-featured-projects .project-card__title {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .ozkaya-featured-projects__inner.page-width,
+  .ozkaya-featured-projects__inner {
+    padding: 2.4rem 1.6rem 4rem;
+  }
+
+  .ozkaya-featured-projects .project-card__image-wrap {
+    height: 18rem;
+  }
+
+  .ozkaya-featured-projects .project-card__image {
+    transform: scale(1.15);
+  }
+
+  .ozkaya-featured-projects .project-card__title {
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .ozkaya-featured-projects .project-card__image-wrap {
+    height: 16rem;
+  }
+}
