@@ -3,5 +3,11 @@
   "buildCommand": "node scripts/prepare-vercel.js",
   "outputDirectory": "public",
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/cdn/shop/:path*",
+      "destination": "https://shop.vitrumgroup.org/cdn/shop/:path*"
+    }
+  ]
 }
