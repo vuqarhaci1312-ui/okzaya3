@@ -6,6 +6,7 @@ Thumbs.db
 *.log
 .cursor/
 .vercel/
+public/
 vitrum-project-cache/
 vitrum-about-us-cache.html
 vitrum-all-projects-raw.html
